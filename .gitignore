@@ -1,0 +1,16 @@
+
+# Datasets and model files
+data/*
+!data/.gitkeep
+*.pt
+*.pth
+*.safetensors
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets
+.env
+.env.*

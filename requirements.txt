@@ -5,3 +5,9 @@ sentence-transformers
 scikit-learn
 matplotlib
 tqdm
+datasets
+huggingface_hub
+pyarrow
+ipykernel
+spacy
+transformers

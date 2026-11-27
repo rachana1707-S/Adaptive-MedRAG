@@ -1,0 +1,51 @@
+{
+  "method": "no_rag",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "num_questions": 900,
+  "accuracy": 0.2011111111111111,
+  "always_yes_accuracy": 0.5544444444444444,
+  "macro_f1": 0.18161268746647571,
+  "label_metrics": {
+    "yes": {
+      "precision": 0.676056338028169,
+      "recall": 0.19238476953907815,
+      "f1": 0.2995319812792512
+    },
+    "no": {
+      "precision": 0.3333333333333333,
+      "recall": 0.036303630363036306,
+      "f1": 0.06547619047619048
+    },
+    "maybe": {
+      "precision": 0.10206896551724139,
+      "recall": 0.7551020408163265,
+      "f1": 0.17982989064398544
+    }
+  },
+  "confusion_matrix": {
+    "yes": {
+      "yes": 96,
+      "no": 14,
+      "maybe": 389,
+      "unknown": 0
+    },
+    "no": {
+      "yes": 30,
+      "no": 11,
+      "maybe": 262,
+      "unknown": 0
+    },
+    "maybe": {
+      "yes": 16,
+      "no": 8,
+      "maybe": 74,
+      "unknown": 0
+    }
+  },
+  "time_stats": {
+    "average_ms": 91.8,
+    "median_ms": 76,
+    "fastest_ms": 70,
+    "slowest_ms": 624
+  }
+}

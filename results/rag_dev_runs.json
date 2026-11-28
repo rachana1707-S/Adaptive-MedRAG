@@ -1,0 +1,6261 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "top_k": 5,
+  "split": "dev",
+  "summaries": [
+    {
+      "run": "no_rag",
+      "accuracy": 0.19,
+      "macro_f1": 0.171,
+      "pred_yes": 15,
+      "pred_no": 7,
+      "pred_maybe": 78,
+      "unknown": 0,
+      "gold_abstract_in_top5": "n/a",
+      "median_time_ms": 138
+    },
+    {
+      "run": "rag_bm25",
+      "accuracy": 0.52,
+      "macro_f1": 0.31,
+      "pred_yes": 84,
+      "pred_no": 16,
+      "pred_maybe": 0,
+      "unknown": 0,
+      "gold_abstract_in_top5": 0.99,
+      "median_time_ms": 392
+    },
+    {
+      "run": "rag_dense",
+      "accuracy": 0.59,
+      "macro_f1": 0.385,
+      "pred_yes": 81,
+      "pred_no": 18,
+      "pred_maybe": 1,
+      "unknown": 0,
+      "gold_abstract_in_top5": 0.99,
+      "median_time_ms": 419
+    },
+    {
+      "run": "rag_hybrid",
+      "accuracy": 0.61,
+      "macro_f1": 0.405,
+      "pred_yes": 80,
+      "pred_no": 20,
+      "pred_maybe": 0,
+      "unknown": 0,
+      "gold_abstract_in_top5": 0.99,
+      "median_time_ms": 380
+    }
+  ],
+  "runs": {
+    "no_rag": [
+      {
+        "question_id": "10922093",
+        "question": "Does open access endoscopy close the door to an adequately informed patient?",
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "response_time_ms": 327
+      },
+      {
+        "question_id": "15388567",
+        "question": "Are sports medicine journals relevant and applicable to practitioners and athletes?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "response_time_ms": 127
+      },
+      {
+        "question_id": "11334578",
+        "question": "Is there awareness of pharmaceutical expenditure in the reformed primary care system?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 237
+      },
+      {
+        "question_id": "25735444",
+        "question": "Rectal cancer threatening or affecting the prostatic plane: is partial prostatectomy oncologically adequate?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "maybe",
+        "response_time_ms": 286
+      },
+      {
+        "question_id": "26298839",
+        "question": "Is Acupuncture Efficacious for Treating Phonotraumatic Vocal Pathologies?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "response_time_ms": 258
+      },
+      {
+        "question_id": "19327500",
+        "question": "Gender difference in survival of resected non-small cell lung cancer: histology-related phenomenon?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 288
+      },
+      {
+        "question_id": "22427593",
+        "question": "Are normally sighted, visually impaired, and blind pedestrians accurate and reliable at making street crossing decisions?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "maybe",
+        "response_time_ms": 217
+      },
+      {
+        "question_id": "23916653",
+        "question": "Orthostatic myoclonus: an underrecognized cause of unsteadiness?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "response_time_ms": 331
+      },
+      {
+        "question_id": "21398266",
+        "question": "Do symptoms matter when considering patients for phase I clinical trials?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 313
+      },
+      {
+        "question_id": "21904069",
+        "question": "Spleen-preserving distal pancreatectomy with resection of the splenic vessels. Should one rely on the short gastric arteries?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 174
+      },
+      {
+        "question_id": "24748473",
+        "question": "Are there risk factors that increase the rate of staple line leakage in patients undergoing primary sleeve gastrectomy for morbid obesity?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 138
+      },
+      {
+        "question_id": "17312514",
+        "question": "Does quilting suture prevent seroma in abdominoplasty?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 157
+      },
+      {
+        "question_id": "25501465",
+        "question": "Evaluation of pediatric VCUG at an academic children's hospital: is the radiographic scout image necessary?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 104
+      },
+      {
+        "question_id": "12442934",
+        "question": "Does ibuprofen increase perioperative blood loss during hip arthroplasty?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 133
+      },
+      {
+        "question_id": "15466981",
+        "question": "Prostate-specific antigen and free prostate-specific antigen in the early detection of prostate cancer: do combination tests improve detection?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "response_time_ms": 106
+      },
+      {
+        "question_id": "24519615",
+        "question": "Does patella position influence ligament balancing in total knee arthroplasty?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 105
+      },
+      {
+        "question_id": "26965932",
+        "question": "Is Bare-Metal Stent Implantation Still Justifiable in High Bleeding Risk Patients Undergoing Percutaneous Coronary Intervention?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 111
+      },
+      {
+        "question_id": "21402341",
+        "question": "Assessment of carotid artery stenosis before coronary artery bypass surgery. Is it always necessary?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 112
+      },
+      {
+        "question_id": "27394685",
+        "question": "Bony defects in chronic anterior posttraumatic dislocation of the shoulder: Is there a correlation between humeral and glenoidal lesions?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 106
+      },
+      {
+        "question_id": "23587089",
+        "question": "School food policy at Dutch primary schools: room for improvement?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 111
+      },
+      {
+        "question_id": "9363244",
+        "question": "Does occupational nuclear power plant radiation affect conception and pregnancy?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 75
+      },
+      {
+        "question_id": "26209118",
+        "question": "Utility of unenhanced fat-suppressed T1-weighted MRI in children with sickle cell disease -- can it differentiate bone infarcts from acute osteomyelitis?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 75
+      },
+      {
+        "question_id": "16510651",
+        "question": "Birth characteristics and risk of low intellectual performance in early adulthood: are the associations confounded by socioeconomic factors in adolescence or familial effects?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 105
+      },
+      {
+        "question_id": "11555508",
+        "question": "Do inhaled corticosteroids affect perception of dyspnea during bronchoconstriction in asthma?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 180
+      },
+      {
+        "question_id": "25487603",
+        "question": "Analysis of the epidemiological pattern of Shigellosis in Barcelona between 1988 and 2012: Is it an emerging sexually transmitted infection?",
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "response_time_ms": 129
+      },
+      {
+        "question_id": "25155638",
+        "question": "Can routine offering of influenza vaccination in office-based settings reduce racial and ethnic disparities in adult influenza vaccination?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 165
+      },
+      {
+        "question_id": "21394762",
+        "question": "Is pelvic pain associated with defecatory symptoms in women with pelvic organ prolapse?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 169
+      },
+      {
+        "question_id": "15112004",
+        "question": "Are WHO/UNAIDS/UNICEF-recommended replacement milks for infants of HIV-infected mothers appropriate in the South African context?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 142
+      },
+      {
+        "question_id": "17595200",
+        "question": "Is there an intrauterine influence on obesity?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 114
+      },
+      {
+        "question_id": "18928979",
+        "question": "Can myometrial electrical activity identify patients in preterm labor?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 110
+      },
+      {
+        "question_id": "19108857",
+        "question": "Cerebromediastinal tuberculosis in a child with a probable Say-Barber-Miller syndrome: a causative link?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 158
+      },
+      {
+        "question_id": "11053064",
+        "question": "Fatigue in primary Sj\u00f6gren's syndrome: is there a link with the fibromyalgia syndrome?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 129
+      },
+      {
+        "question_id": "21848798",
+        "question": "MiraLAX vs. Golytely: is there a significant difference in the adenoma detection rate?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 108
+      },
+      {
+        "question_id": "11776681",
+        "question": "Is intrapartum vibroacoustic stimulation an effective predictor of fetal acidosis?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 104
+      },
+      {
+        "question_id": "23870157",
+        "question": "Are intraoperative precursor events associated with postoperative major adverse events?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 104
+      },
+      {
+        "question_id": "15381614",
+        "question": "Cutaneous melanoma in a multiethnic population: is this a different disease?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "maybe",
+        "response_time_ms": 102
+      },
+      {
+        "question_id": "22350859",
+        "question": "Can pictorial warning labels on cigarette packages address smoking-related health disparities?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 113
+      },
+      {
+        "question_id": "18284441",
+        "question": "Expression of c-kit protooncogen in hepatitis B virus-induced chronic hepatitis, cirrhosis and hepatocellular carcinoma: has it a diagnostic role?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "maybe",
+        "response_time_ms": 138
+      },
+      {
+        "question_id": "25481573",
+        "question": "Processing fluency effects: can the content and presentation of participant information sheets influence recruitment and participation for an antenatal intervention?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 201
+      },
+      {
+        "question_id": "10749257",
+        "question": "Has the mammography quality standards act affected the mammography quality in North Carolina?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 146
+      },
+      {
+        "question_id": "23177368",
+        "question": "Does immediate breast reconstruction compromise the delivery of adjuvant chemotherapy?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 124
+      },
+      {
+        "question_id": "11838307",
+        "question": "Cold knife conization vs. LEEP. Are they the same procedure?",
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "response_time_ms": 200
+      },
+      {
+        "question_id": "12855939",
+        "question": "Is ankle/arm pressure predictive for cardiovascular mortality in older patients living in nursing homes?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 191
+      },
+      {
+        "question_id": "15588538",
+        "question": "Chronic functional somatic symptoms: a single syndrome?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 191
+      },
+      {
+        "question_id": "23375036",
+        "question": "An HIV1/2 point of care test on sputum for screening TB/HIV co-infection in Central India - Will it work?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 160
+      },
+      {
+        "question_id": "18319270",
+        "question": "Does confined placental mosaicism account for adverse perinatal outcomes in IVF pregnancies?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 204
+      },
+      {
+        "question_id": "12846929",
+        "question": "Quality of life in lung cancer patients: does socioeconomic status matter?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 200
+      },
+      {
+        "question_id": "28127977",
+        "question": "Are serum leptin levels a prognostic factor in advanced lung cancer?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 190
+      },
+      {
+        "question_id": "14968373",
+        "question": "Can CT predict the level of CSF block in tuberculous hydrocephalus?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 185
+      },
+      {
+        "question_id": "22042121",
+        "question": "Perioperative care in an animal model for training in abdominal surgery: is it necessary a preoperative fasting?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 220
+      },
+      {
+        "question_id": "26859535",
+        "question": "Screening History Among Women with Invasive Cervical Cancer in an Academic Medical Center: Will We Miss Cancers Following Updated Guidelines?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 248
+      },
+      {
+        "question_id": "19103915",
+        "question": "Are home sampling kits for sexually transmitted infections acceptable among men who have sex with men?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "maybe",
+        "response_time_ms": 195
+      },
+      {
+        "question_id": "22694248",
+        "question": "Is there a model to teach and practice retroperitoneoscopic nephrectomy?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "response_time_ms": 247
+      },
+      {
+        "question_id": "17008699",
+        "question": "Do patients with localized prostate cancer treatment really want more aggressive treatment?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 205
+      },
+      {
+        "question_id": "12006913",
+        "question": "Do lipids, blood pressure, diabetes, and smoking confer equal risk of myocardial infarction in women as in men?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 233
+      },
+      {
+        "question_id": "12913347",
+        "question": "Do microbiological factors account for poor pregnancy outcome among unmarried pregnant women in Poland?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 217
+      },
+      {
+        "question_id": "18472368",
+        "question": "Does treatment duration affect outcome after radiotherapy for prostate cancer?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 131
+      },
+      {
+        "question_id": "15787677",
+        "question": "Does aerobic fitness influence microvascular function in healthy adults at risk of developing Type 2 diabetes?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "response_time_ms": 126
+      },
+      {
+        "question_id": "26485091",
+        "question": "Does the use of atypical antipsychotics as adjunctive therapy in depression result in cost savings?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 128
+      },
+      {
+        "question_id": "22302658",
+        "question": "Does limb-salvage surgery offer patients better quality of life and functional capacity than amputation?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "response_time_ms": 138
+      },
+      {
+        "question_id": "19643525",
+        "question": "Can vaginal pH be measured from the wet mount slide?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "response_time_ms": 167
+      },
+      {
+        "question_id": "20064872",
+        "question": "Can the prognosis of polymyalgia rheumatica be predicted at disease onset?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 164
+      },
+      {
+        "question_id": "19923859",
+        "question": "Can T-cell deficiency affect spatial learning ability following toluene exposure?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 218
+      },
+      {
+        "question_id": "27338535",
+        "question": "Do risk calculators accurately predict surgical site\u00a0occurrences?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 139
+      },
+      {
+        "question_id": "28027677",
+        "question": "Do prerecorded lecture VODcasts affect lecture attendance of first-yearpre-clinical Graduate Entry to Medicine students?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 199
+      },
+      {
+        "question_id": "24318956",
+        "question": "Is digoxin use for cardiovascular disease associated with risk of prostate cancer?",
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "response_time_ms": 167
+      },
+      {
+        "question_id": "21569408",
+        "question": "Does context matter for the relationship between deprivation and all-cause mortality?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 166
+      },
+      {
+        "question_id": "11729377",
+        "question": "Is there still a need for living-related liver transplantation in children?",
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "response_time_ms": 164
+      },
+      {
+        "question_id": "20871246",
+        "question": "Young-Burgess classification of pelvic ring fractures: does it predict mortality, transfusion requirements, and non-orthopaedic injuries?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "maybe",
+        "response_time_ms": 187
+      },
+      {
+        "question_id": "16418930",
+        "question": "Landolt C and snellen e acuity: differences in strabismus amblyopia?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 122
+      },
+      {
+        "question_id": "20084845",
+        "question": "Biomolecular identification of allergenic pollen: a new perspective for aerobiological monitoring?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 105
+      },
+      {
+        "question_id": "21850494",
+        "question": "Hepatorenal syndrome: are we missing some prognostic factors?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 143
+      },
+      {
+        "question_id": "10331115",
+        "question": "Is amoxapine an atypical antipsychotic?",
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "response_time_ms": 88
+      },
+      {
+        "question_id": "10605400",
+        "question": "Is the international normalised ratio (INR) reliable?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "maybe",
+        "response_time_ms": 199
+      },
+      {
+        "question_id": "10757151",
+        "question": "Does ischemic preconditioning require reperfusion before index ischemia?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 182
+      },
+      {
+        "question_id": "21593045",
+        "question": "Do women with ovaries of polycystic morphology without any other features of PCOS benefit from short-term metformin co-treatment during IVF?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 144
+      },
+      {
+        "question_id": "24298614",
+        "question": "Is the 7th TNM edition suitable for biological predictor in early gastric cancer?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 139
+      },
+      {
+        "question_id": "21914194",
+        "question": "Health care for immigrants in Europe: is there still consensus among country experts about principles of good practice?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "maybe",
+        "response_time_ms": 112
+      },
+      {
+        "question_id": "14518645",
+        "question": "Injury and poisoning mortality among young men--are there any common factors amenable to prevention?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "response_time_ms": 112
+      },
+      {
+        "question_id": "22075911",
+        "question": "Is there a differential in the dental health of new recruits to the British Armed Forces?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 122
+      },
+      {
+        "question_id": "25070942",
+        "question": "Can mass drug administration lead to the sustainable control of schistosomiasis?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "response_time_ms": 131
+      },
+      {
+        "question_id": "10877371",
+        "question": "Does head positioning influence anterior chamber depth in pseudoexfoliation syndrome?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 113
+      },
+      {
+        "question_id": "22023714",
+        "question": "Does delivery mode affect women's postpartum quality of life in rural China?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 106
+      },
+      {
+        "question_id": "25521278",
+        "question": "Is plate clearing a risk factor for obesity?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 112
+      },
+      {
+        "question_id": "10548670",
+        "question": "Does the National Institutes of Health Stroke Scale favor left hemisphere strokes?",
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "response_time_ms": 128
+      },
+      {
+        "question_id": "25304452",
+        "question": "Nutritional assessment of gluten-free diet. Is gluten-free diet deficient in some nutrient?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 106
+      },
+      {
+        "question_id": "19145527",
+        "question": "Do emergency medical services professionals think they should participate in disease prevention?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "maybe",
+        "response_time_ms": 100
+      },
+      {
+        "question_id": "27615402",
+        "question": "Does the familial transmission of drinking patterns persist into young adulthood?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "response_time_ms": 134
+      },
+      {
+        "question_id": "12153648",
+        "question": "Does birth center care during a woman's first pregnancy have any impact on her future reproduction?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 108
+      },
+      {
+        "question_id": "17919952",
+        "question": "Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "response_time_ms": 101
+      },
+      {
+        "question_id": "26383908",
+        "question": "Does concept mapping enhance learning outcome of nursing students?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "response_time_ms": 101
+      },
+      {
+        "question_id": "25488308",
+        "question": "Can bone thickness and inter-radicular space affect miniscrew placement in posterior mandibular sites?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 103
+      },
+      {
+        "question_id": "23949294",
+        "question": "Treatment as prevention in resource-limited settings: is it feasible to maintain HIV viral load suppression over time?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 114
+      },
+      {
+        "question_id": "26104852",
+        "question": "Can echocardiography and ECG discriminate hereditary transthyretin V30M amyloidosis from hypertrophic cardiomyopathy?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 101
+      },
+      {
+        "question_id": "24153338",
+        "question": "Is aneurysm repair justified for the patients aged 80 or older after aneurysmal subarachnoid hemorrhage?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 144
+      },
+      {
+        "question_id": "23848044",
+        "question": "Does oxybutynin hydrochloride cause arrhythmia in children with bladder dysfunction?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "yes",
+        "response_time_ms": 102
+      },
+      {
+        "question_id": "22668852",
+        "question": "Do African American women require fewer calories to maintain weight?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 106
+      },
+      {
+        "question_id": "19401574",
+        "question": "Gadofosveset-enhanced MR angiography of carotid arteries: does steady-state imaging improve accuracy of first-pass imaging?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "response_time_ms": 102
+      },
+      {
+        "question_id": "12595848",
+        "question": "Is specialty care associated with improved survival of patients with congestive heart failure?",
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "response_time_ms": 100
+      },
+      {
+        "question_id": "25985014",
+        "question": "Is ganglionated plexi ablation during Maze IV procedure beneficial for postoperative long-term stable sinus rhythm?",
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "response_time_ms": 105
+      }
+    ],
+    "rag_bm25": [
+      {
+        "question_id": "10922093",
+        "question": "Does open access endoscopy close the door to an adequately informed patient?",
+        "sources": [
+          "10922093",
+          "22683044",
+          "19237087",
+          "21194998",
+          "24139705"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 409,
+        "response_time_ms": 421
+      },
+      {
+        "question_id": "15388567",
+        "question": "Are sports medicine journals relevant and applicable to practitioners and athletes?",
+        "sources": [
+          "15388567",
+          "24340838",
+          "8422202",
+          "22849512",
+          "26200172"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 287,
+        "response_time_ms": 292
+      },
+      {
+        "question_id": "11334578",
+        "question": "Is there awareness of pharmaceutical expenditure in the reformed primary care system?",
+        "sources": [
+          "11334578",
+          "23497210",
+          "18534072",
+          "18619710",
+          "22233470"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 349,
+        "response_time_ms": 354
+      },
+      {
+        "question_id": "25735444",
+        "question": "Rectal cancer threatening or affecting the prostatic plane: is partial prostatectomy oncologically adequate?",
+        "sources": [
+          "25735444",
+          "12607120",
+          "15708048",
+          "23096188",
+          "29112560"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 370,
+        "response_time_ms": 377
+      },
+      {
+        "question_id": "26298839",
+        "question": "Is Acupuncture Efficacious for Treating Phonotraumatic Vocal Pathologies?",
+        "sources": [
+          "26298839",
+          "20842006",
+          "17096624",
+          "27050489",
+          "21848798"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 4,
+        "generation_time_ms": 318,
+        "response_time_ms": 322
+      },
+      {
+        "question_id": "19327500",
+        "question": "Gender difference in survival of resected non-small cell lung cancer: histology-related phenomenon?",
+        "sources": [
+          "19327500",
+          "11888773",
+          "16968876",
+          "16827975",
+          "28127977"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 373,
+        "response_time_ms": 380
+      },
+      {
+        "question_id": "22427593",
+        "question": "Are normally sighted, visually impaired, and blind pedestrians accurate and reliable at making street crossing decisions?",
+        "sources": [
+          "22427593",
+          "23736032",
+          "9854965",
+          "23088164",
+          "21756515"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 277,
+        "response_time_ms": 284
+      },
+      {
+        "question_id": "23916653",
+        "question": "Orthostatic myoclonus: an underrecognized cause of unsteadiness?",
+        "sources": [
+          "23916653",
+          "21849531",
+          "25228241",
+          "27050489",
+          "11566686"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 4,
+        "generation_time_ms": 335,
+        "response_time_ms": 339
+      },
+      {
+        "question_id": "21398266",
+        "question": "Do symptoms matter when considering patients for phase I clinical trials?",
+        "sources": [
+          "18041059",
+          "21398266",
+          "21457946",
+          "23359100",
+          "23412195"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 326,
+        "response_time_ms": 332
+      },
+      {
+        "question_id": "21904069",
+        "question": "Spleen-preserving distal pancreatectomy with resection of the splenic vessels. Should one rely on the short gastric arteries?",
+        "sources": [
+          "21904069",
+          "16432652",
+          "24073931",
+          "12607666",
+          "14652839"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 375,
+        "response_time_ms": 383
+      },
+      {
+        "question_id": "24748473",
+        "question": "Are there risk factors that increase the rate of staple line leakage in patients undergoing primary sleeve gastrectomy for morbid obesity?",
+        "sources": [
+          "24748473",
+          "24476003",
+          "24827404",
+          "25986020",
+          "18926458"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 344,
+        "response_time_ms": 355
+      },
+      {
+        "question_id": "17312514",
+        "question": "Does quilting suture prevent seroma in abdominoplasty?",
+        "sources": [
+          "17312514",
+          "24061619",
+          "9722752",
+          "27884344",
+          "20101129"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 3,
+        "generation_time_ms": 352,
+        "response_time_ms": 355
+      },
+      {
+        "question_id": "25501465",
+        "question": "Evaluation of pediatric VCUG at an academic children's hospital: is the radiographic scout image necessary?",
+        "sources": [
+          "25501465",
+          "10966337",
+          "18607272",
+          "25034219",
+          "23848044"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 337,
+        "response_time_ms": 342
+      },
+      {
+        "question_id": "12442934",
+        "question": "Does ibuprofen increase perioperative blood loss during hip arthroplasty?",
+        "sources": [
+          "12442934",
+          "23359100",
+          "12142826",
+          "20101129",
+          "19130332"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 3,
+        "generation_time_ms": 313,
+        "response_time_ms": 316
+      },
+      {
+        "question_id": "15466981",
+        "question": "Prostate-specific antigen and free prostate-specific antigen in the early detection of prostate cancer: do combination tests improve detection?",
+        "sources": [
+          "23792130",
+          "15466981",
+          "19836806",
+          "20608141",
+          "15708048"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 338,
+        "response_time_ms": 344
+      },
+      {
+        "question_id": "24519615",
+        "question": "Does patella position influence ligament balancing in total knee arthroplasty?",
+        "sources": [
+          "24519615",
+          "23568387",
+          "15687156",
+          "9465206",
+          "24695920"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 4,
+        "generation_time_ms": 407,
+        "response_time_ms": 411
+      },
+      {
+        "question_id": "26965932",
+        "question": "Is Bare-Metal Stent Implantation Still Justifiable in High Bleeding Risk Patients Undergoing Percutaneous Coronary Intervention?",
+        "sources": [
+          "26965932",
+          "16216859",
+          "21952349",
+          "26175531",
+          "24671913"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 404,
+        "response_time_ms": 410
+      },
+      {
+        "question_id": "21402341",
+        "question": "Assessment of carotid artery stenosis before coronary artery bypass surgery. Is it always necessary?",
+        "sources": [
+          "21402341",
+          "18926458",
+          "10732884",
+          "19401574",
+          "26460153"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 385,
+        "response_time_ms": 390
+      },
+      {
+        "question_id": "27394685",
+        "question": "Bony defects in chronic anterior posttraumatic dislocation of the shoulder: Is there a correlation between humeral and glenoidal lesions?",
+        "sources": [
+          "27394685",
+          "27040842",
+          "17890090",
+          "15954832",
+          "24793469"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 345,
+        "response_time_ms": 351
+      },
+      {
+        "question_id": "23587089",
+        "question": "School food policy at Dutch primary schools: room for improvement?",
+        "sources": [
+          "23587089",
+          "12626177",
+          "23774337",
+          "17259061",
+          "22491528"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 376,
+        "response_time_ms": 388
+      },
+      {
+        "question_id": "9363244",
+        "question": "Does occupational nuclear power plant radiation affect conception and pregnancy?",
+        "sources": [
+          "9363244",
+          "16253970",
+          "18222909",
+          "22519710",
+          "16647887"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 263,
+        "response_time_ms": 268
+      },
+      {
+        "question_id": "26209118",
+        "question": "Utility of unenhanced fat-suppressed T1-weighted MRI in children with sickle cell disease -- can it differentiate bone infarcts from acute osteomyelitis?",
+        "sources": [
+          "26209118",
+          "9465206",
+          "27991408",
+          "23096188",
+          "23449952"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 493,
+        "response_time_ms": 506
+      },
+      {
+        "question_id": "16510651",
+        "question": "Birth characteristics and risk of low intellectual performance in early adulthood: are the associations confounded by socioeconomic factors in adolescence or familial effects?",
+        "sources": [
+          "16510651",
+          "21558951",
+          "27615402",
+          "18801797",
+          "15918864"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 312,
+        "response_time_ms": 323
+      },
+      {
+        "question_id": "11555508",
+        "question": "Do inhaled corticosteroids affect perception of dyspnea during bronchoconstriction in asthma?",
+        "sources": [
+          "11555508",
+          "17453263",
+          "24785562",
+          "15841770",
+          "19054501"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 394,
+        "response_time_ms": 400
+      },
+      {
+        "question_id": "25487603",
+        "question": "Analysis of the epidemiological pattern of Shigellosis in Barcelona between 1988 and 2012: Is it an emerging sexually transmitted infection?",
+        "sources": [
+          "25487603",
+          "9792366",
+          "16816043",
+          "19103915",
+          "17295865"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 20,
+        "generation_time_ms": 360,
+        "response_time_ms": 380
+      },
+      {
+        "question_id": "25155638",
+        "question": "Can routine offering of influenza vaccination in office-based settings reduce racial and ethnic disparities in adult influenza vaccination?",
+        "sources": [
+          "25155638",
+          "12238307",
+          "8111516",
+          "20602784",
+          "27642458"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 9,
+        "generation_time_ms": 340,
+        "response_time_ms": 349
+      },
+      {
+        "question_id": "21394762",
+        "question": "Is pelvic pain associated with defecatory symptoms in women with pelvic organ prolapse?",
+        "sources": [
+          "21394762",
+          "24809662",
+          "12090319",
+          "10411439",
+          "20871246"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 334,
+        "response_time_ms": 341
+      },
+      {
+        "question_id": "15112004",
+        "question": "Are WHO/UNAIDS/UNICEF-recommended replacement milks for infants of HIV-infected mothers appropriate in the South African context?",
+        "sources": [
+          "15112004",
+          "9603166",
+          "16428354",
+          "19640728",
+          "23149821"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 9,
+        "generation_time_ms": 349,
+        "response_time_ms": 358
+      },
+      {
+        "question_id": "17595200",
+        "question": "Is there an intrauterine influence on obesity?",
+        "sources": [
+          "17595200",
+          "22813804",
+          "26449554",
+          "19615731",
+          "21558951"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 4,
+        "generation_time_ms": 339,
+        "response_time_ms": 343
+      },
+      {
+        "question_id": "18928979",
+        "question": "Can myometrial electrical activity identify patients in preterm labor?",
+        "sources": [
+          "18928979",
+          "11776681",
+          "26215326",
+          "23690198",
+          "20577124"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 411,
+        "response_time_ms": 416
+      },
+      {
+        "question_id": "19108857",
+        "question": "Cerebromediastinal tuberculosis in a child with a probable Say-Barber-Miller syndrome: a causative link?",
+        "sources": [
+          "19108857",
+          "12848629",
+          "23048048",
+          "11970923",
+          "11053064"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 273,
+        "response_time_ms": 280
+      },
+      {
+        "question_id": "11053064",
+        "question": "Fatigue in primary Sj\u00f6gren's syndrome: is there a link with the fibromyalgia syndrome?",
+        "sources": [
+          "11053064",
+          "19108857",
+          "18575014",
+          "12221908",
+          "17606778"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 344,
+        "response_time_ms": 352
+      },
+      {
+        "question_id": "21848798",
+        "question": "MiraLAX vs. Golytely: is there a significant difference in the adenoma detection rate?",
+        "sources": [
+          "21848798",
+          "19237087",
+          "20608141",
+          "27078715",
+          "23453079"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 370,
+        "response_time_ms": 377
+      },
+      {
+        "question_id": "11776681",
+        "question": "Is intrapartum vibroacoustic stimulation an effective predictor of fetal acidosis?",
+        "sources": [
+          "11776681",
+          "9542484",
+          "16809243",
+          "25588461",
+          "18319270"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 460,
+        "response_time_ms": 465
+      },
+      {
+        "question_id": "23870157",
+        "question": "Are intraoperative precursor events associated with postoperative major adverse events?",
+        "sources": [
+          "23870157",
+          "26965932",
+          "10490564",
+          "24614789",
+          "21420186"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 396,
+        "response_time_ms": 407
+      },
+      {
+        "question_id": "15381614",
+        "question": "Cutaneous melanoma in a multiethnic population: is this a different disease?",
+        "sources": [
+          "15381614",
+          "15223779",
+          "24434052",
+          "20971618",
+          "27896825"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 514,
+        "response_time_ms": 520
+      },
+      {
+        "question_id": "22350859",
+        "question": "Can pictorial warning labels on cigarette packages address smoking-related health disparities?",
+        "sources": [
+          "22350859",
+          "22233470",
+          "17259061",
+          "20602784",
+          "21669959"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 10,
+        "generation_time_ms": 536,
+        "response_time_ms": 546
+      },
+      {
+        "question_id": "18284441",
+        "question": "Expression of c-kit protooncogen in hepatitis B virus-induced chronic hepatitis, cirrhosis and hepatocellular carcinoma: has it a diagnostic role?",
+        "sources": [
+          "18284441",
+          "11926574",
+          "17295865",
+          "15223779",
+          "21459725"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 39,
+        "generation_time_ms": 696,
+        "response_time_ms": 735
+      },
+      {
+        "question_id": "25481573",
+        "question": "Processing fluency effects: can the content and presentation of participant information sheets influence recruitment and participation for an antenatal intervention?",
+        "sources": [
+          "25481573",
+          "22350859",
+          "22849512",
+          "18594195",
+          "24374414"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 58,
+        "generation_time_ms": 588,
+        "response_time_ms": 646
+      },
+      {
+        "question_id": "10749257",
+        "question": "Has the mammography quality standards act affected the mammography quality in North Carolina?",
+        "sources": [
+          "10749257",
+          "10808977",
+          "28143468",
+          "24783217",
+          "24487044"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 37,
+        "generation_time_ms": 582,
+        "response_time_ms": 619
+      },
+      {
+        "question_id": "23177368",
+        "question": "Does immediate breast reconstruction compromise the delivery of adjuvant chemotherapy?",
+        "sources": [
+          "23177368",
+          "12419743",
+          "17940352",
+          "14692023",
+          "26194560"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 10,
+        "generation_time_ms": 629,
+        "response_time_ms": 639
+      },
+      {
+        "question_id": "11838307",
+        "question": "Cold knife conization vs. LEEP. Are they the same procedure?",
+        "sources": [
+          "11838307",
+          "23539689",
+          "16678696",
+          "20538207",
+          "25819796"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 23,
+        "generation_time_ms": 412,
+        "response_time_ms": 435
+      },
+      {
+        "question_id": "12855939",
+        "question": "Is ankle/arm pressure predictive for cardiovascular mortality in older patients living in nursing homes?",
+        "sources": [
+          "12855939",
+          "21368683",
+          "22012962",
+          "21952349",
+          "18378554"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 18,
+        "generation_time_ms": 379,
+        "response_time_ms": 397
+      },
+      {
+        "question_id": "15588538",
+        "question": "Chronic functional somatic symptoms: a single syndrome?",
+        "sources": [
+          "15588538",
+          "12920330",
+          "18693227",
+          "17593459",
+          "18575014"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 10,
+        "generation_time_ms": 450,
+        "response_time_ms": 460
+      },
+      {
+        "question_id": "23375036",
+        "question": "An HIV1/2 point of care test on sputum for screening TB/HIV co-infection in Central India - Will it work?",
+        "sources": [
+          "23375036",
+          "21756515",
+          "23149821",
+          "15280782",
+          "28196511"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 31,
+        "generation_time_ms": 379,
+        "response_time_ms": 410
+      },
+      {
+        "question_id": "18319270",
+        "question": "Does confined placental mosaicism account for adverse perinatal outcomes in IVF pregnancies?",
+        "sources": [
+          "18319270",
+          "28247485",
+          "22521460",
+          "27928673",
+          "24446763"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 338,
+        "response_time_ms": 344
+      },
+      {
+        "question_id": "12846929",
+        "question": "Quality of life in lung cancer patients: does socioeconomic status matter?",
+        "sources": [
+          "12846929",
+          "16968876",
+          "17429333",
+          "27554179",
+          "27216167"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 359,
+        "response_time_ms": 365
+      },
+      {
+        "question_id": "28127977",
+        "question": "Are serum leptin levels a prognostic factor in advanced lung cancer?",
+        "sources": [
+          "28127977",
+          "22237146",
+          "16968876",
+          "20577124",
+          "25787073"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 357,
+        "response_time_ms": 363
+      },
+      {
+        "question_id": "14968373",
+        "question": "Can CT predict the level of CSF block in tuberculous hydrocephalus?",
+        "sources": [
+          "14968373",
+          "17578985",
+          "12848629",
+          "18708308",
+          "24614789"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 295,
+        "response_time_ms": 301
+      },
+      {
+        "question_id": "22042121",
+        "question": "Perioperative care in an animal model for training in abdominal surgery: is it necessary a preoperative fasting?",
+        "sources": [
+          "22042121",
+          "16678696",
+          "21402341",
+          "21164063",
+          "9745063"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 398,
+        "response_time_ms": 406
+      },
+      {
+        "question_id": "26859535",
+        "question": "Screening History Among Women with Invasive Cervical Cancer in an Academic Medical Center: Will We Miss Cancers Following Updated Guidelines?",
+        "sources": [
+          "26859535",
+          "22564465",
+          "16361634",
+          "25311479",
+          "26215326"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 9,
+        "generation_time_ms": 392,
+        "response_time_ms": 401
+      },
+      {
+        "question_id": "19103915",
+        "question": "Are home sampling kits for sexually transmitted infections acceptable among men who have sex with men?",
+        "sources": [
+          "19103915",
+          "9792366",
+          "17682349",
+          "16816043",
+          "25487603"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 372,
+        "response_time_ms": 380
+      },
+      {
+        "question_id": "22694248",
+        "question": "Is there a model to teach and practice retroperitoneoscopic nephrectomy?",
+        "sources": [
+          "22694248",
+          "23517744",
+          "22117569",
+          "22266735",
+          "21914194"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 343,
+        "response_time_ms": 349
+      },
+      {
+        "question_id": "17008699",
+        "question": "Do patients with localized prostate cancer treatment really want more aggressive treatment?",
+        "sources": [
+          "15708048",
+          "17008699",
+          "23806388",
+          "12947068",
+          "25787073"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 351,
+        "response_time_ms": 357
+      },
+      {
+        "question_id": "12006913",
+        "question": "Do lipids, blood pressure, diabetes, and smoking confer equal risk of myocardial infarction in women as in men?",
+        "sources": [
+          "12006913",
+          "18926458",
+          "24019262",
+          "23149821",
+          "10201555"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 10,
+        "generation_time_ms": 411,
+        "response_time_ms": 421
+      },
+      {
+        "question_id": "12913347",
+        "question": "Do microbiological factors account for poor pregnancy outcome among unmarried pregnant women in Poland?",
+        "sources": [
+          "12913347",
+          "15050326",
+          "16809243",
+          "17551944",
+          "23497210"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 461,
+        "response_time_ms": 468
+      },
+      {
+        "question_id": "18472368",
+        "question": "Does treatment duration affect outcome after radiotherapy for prostate cancer?",
+        "sources": [
+          "18472368",
+          "12947068",
+          "14697414",
+          "19836806",
+          "25489696"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 421,
+        "response_time_ms": 426
+      },
+      {
+        "question_id": "15787677",
+        "question": "Does aerobic fitness influence microvascular function in healthy adults at risk of developing Type 2 diabetes?",
+        "sources": [
+          "15787677",
+          "17076091",
+          "23224030",
+          "23228527",
+          "20011163"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 9,
+        "generation_time_ms": 399,
+        "response_time_ms": 408
+      },
+      {
+        "question_id": "26485091",
+        "question": "Does the use of atypical antipsychotics as adjunctive therapy in depression result in cost savings?",
+        "sources": [
+          "26485091",
+          "23497210",
+          "25691513",
+          "24374414",
+          "25443385"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 384,
+        "response_time_ms": 392
+      },
+      {
+        "question_id": "22302658",
+        "question": "Does limb-salvage surgery offer patients better quality of life and functional capacity than amputation?",
+        "sources": [
+          "22302658",
+          "11149643",
+          "24901580",
+          "27908583",
+          "20082356"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 309,
+        "response_time_ms": 314
+      },
+      {
+        "question_id": "19643525",
+        "question": "Can vaginal pH be measured from the wet mount slide?",
+        "sources": [
+          "19643525",
+          "18714572",
+          "17559449",
+          "26561905",
+          "11776681"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 403,
+        "response_time_ms": 408
+      },
+      {
+        "question_id": "20064872",
+        "question": "Can the prognosis of polymyalgia rheumatica be predicted at disease onset?",
+        "sources": [
+          "23806388",
+          "19822586",
+          "9044116",
+          "7482275",
+          "12690589"
+        ],
+        "gold_doc_in_top_k": false,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 350,
+        "response_time_ms": 356
+      },
+      {
+        "question_id": "19923859",
+        "question": "Can T-cell deficiency affect spatial learning ability following toluene exposure?",
+        "sources": [
+          "19923859",
+          "9381529",
+          "22658587",
+          "11888773",
+          "21569408"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 373,
+        "response_time_ms": 379
+      },
+      {
+        "question_id": "27338535",
+        "question": "Do risk calculators accurately predict surgical site\u00a0occurrences?",
+        "sources": [
+          "23806388",
+          "27338535",
+          "25417760",
+          "17621202",
+          "28359277"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 4,
+        "generation_time_ms": 388,
+        "response_time_ms": 392
+      },
+      {
+        "question_id": "28027677",
+        "question": "Do prerecorded lecture VODcasts affect lecture attendance of first-yearpre-clinical Graduate Entry to Medicine students?",
+        "sources": [
+          "28027677",
+          "21889895",
+          "24973051",
+          "20549895",
+          "25186850"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 378,
+        "response_time_ms": 383
+      },
+      {
+        "question_id": "24318956",
+        "question": "Is digoxin use for cardiovascular disease associated with risk of prostate cancer?",
+        "sources": [
+          "24318956",
+          "19836806",
+          "18472368",
+          "23806388",
+          "15708048"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 386,
+        "response_time_ms": 393
+      },
+      {
+        "question_id": "21569408",
+        "question": "Does context matter for the relationship between deprivation and all-cause mortality?",
+        "sources": [
+          "21569408",
+          "16956164",
+          "10375486",
+          "21457946",
+          "21849531"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 323,
+        "response_time_ms": 329
+      },
+      {
+        "question_id": "11729377",
+        "question": "Is there still a need for living-related liver transplantation in children?",
+        "sources": [
+          "11729377",
+          "9603166",
+          "9107172",
+          "21850494",
+          "19100463"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 400,
+        "response_time_ms": 406
+      },
+      {
+        "question_id": "20871246",
+        "question": "Young-Burgess classification of pelvic ring fractures: does it predict mortality, transfusion requirements, and non-orthopaedic injuries?",
+        "sources": [
+          "20871246",
+          "24074624",
+          "24630333",
+          "22813804",
+          "27908583"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 383,
+        "response_time_ms": 397
+      },
+      {
+        "question_id": "16418930",
+        "question": "Landolt C and snellen e acuity: differences in strabismus amblyopia?",
+        "sources": [
+          "16418930",
+          "10966943",
+          "27757987",
+          "24939676",
+          "12172698"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 445,
+        "response_time_ms": 451
+      },
+      {
+        "question_id": "20084845",
+        "question": "Biomolecular identification of allergenic pollen: a new perspective for aerobiological monitoring?",
+        "sources": [
+          "20084845",
+          "18565233",
+          "20736672",
+          "20401819",
+          "20538207"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 413,
+        "response_time_ms": 427
+      },
+      {
+        "question_id": "21850494",
+        "question": "Hepatorenal syndrome: are we missing some prognostic factors?",
+        "sources": [
+          "21850494",
+          "11888773",
+          "19578820",
+          "14692023",
+          "18158048"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 4,
+        "generation_time_ms": 413,
+        "response_time_ms": 417
+      },
+      {
+        "question_id": "10331115",
+        "question": "Is amoxapine an atypical antipsychotic?",
+        "sources": [
+          "10331115",
+          "26348845",
+          "24267613",
+          "26485091",
+          "25691513"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 10,
+        "generation_time_ms": 369,
+        "response_time_ms": 379
+      },
+      {
+        "question_id": "10605400",
+        "question": "Is the international normalised ratio (INR) reliable?",
+        "sources": [
+          "15141797",
+          "10605400",
+          "25218577",
+          "22427593",
+          "24172579"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 402,
+        "response_time_ms": 410
+      },
+      {
+        "question_id": "10757151",
+        "question": "Does ischemic preconditioning require reperfusion before index ischemia?",
+        "sources": [
+          "10757151",
+          "21900017",
+          "21198823",
+          "24270957",
+          "17445978"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 487,
+        "response_time_ms": 492
+      },
+      {
+        "question_id": "21593045",
+        "question": "Do women with ovaries of polycystic morphology without any other features of PCOS benefit from short-term metformin co-treatment during IVF?",
+        "sources": [
+          "21593045",
+          "12419743",
+          "22955530",
+          "17105833",
+          "11500608"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 453,
+        "response_time_ms": 469
+      },
+      {
+        "question_id": "24298614",
+        "question": "Is the 7th TNM edition suitable for biological predictor in early gastric cancer?",
+        "sources": [
+          "20674150",
+          "25614468",
+          "24298614",
+          "25604390",
+          "25747932"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 383,
+        "response_time_ms": 395
+      },
+      {
+        "question_id": "21914194",
+        "question": "Health care for immigrants in Europe: is there still consensus among country experts about principles of good practice?",
+        "sources": [
+          "21914194",
+          "24751724",
+          "19854401",
+          "22233470",
+          "20197761"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 9,
+        "generation_time_ms": 430,
+        "response_time_ms": 439
+      },
+      {
+        "question_id": "14518645",
+        "question": "Injury and poisoning mortality among young men--are there any common factors amenable to prevention?",
+        "sources": [
+          "14518645",
+          "18496363",
+          "20871246",
+          "24172579",
+          "21845457"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 381,
+        "response_time_ms": 389
+      },
+      {
+        "question_id": "22075911",
+        "question": "Is there a differential in the dental health of new recruits to the British Armed Forces?",
+        "sources": [
+          "22075911",
+          "22251324",
+          "12070552",
+          "9140335",
+          "18667100"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 335,
+        "response_time_ms": 343
+      },
+      {
+        "question_id": "25070942",
+        "question": "Can mass drug administration lead to the sustainable control of schistosomiasis?",
+        "sources": [
+          "25070942",
+          "22658587",
+          "25406780",
+          "26999038",
+          "22428608"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 381,
+        "response_time_ms": 387
+      },
+      {
+        "question_id": "10877371",
+        "question": "Does head positioning influence anterior chamber depth in pseudoexfoliation syndrome?",
+        "sources": [
+          "10877371",
+          "11438275",
+          "26419377",
+          "12769830",
+          "27394685"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 363,
+        "response_time_ms": 368
+      },
+      {
+        "question_id": "22023714",
+        "question": "Does delivery mode affect women's postpartum quality of life in rural China?",
+        "sources": [
+          "22023714",
+          "16647887",
+          "15918864",
+          "17691856",
+          "27928673"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 399,
+        "response_time_ms": 406
+      },
+      {
+        "question_id": "25521278",
+        "question": "Is plate clearing a risk factor for obesity?",
+        "sources": [
+          "25521278",
+          "19419587",
+          "22990761",
+          "25443385",
+          "16319544"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 403,
+        "response_time_ms": 408
+      },
+      {
+        "question_id": "10548670",
+        "question": "Does the National Institutes of Health Stroke Scale favor left hemisphere strokes?",
+        "sources": [
+          "10548670",
+          "10173769",
+          "25819796",
+          "18065862",
+          "25891436"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 405,
+        "response_time_ms": 411
+      },
+      {
+        "question_id": "25304452",
+        "question": "Nutritional assessment of gluten-free diet. Is gluten-free diet deficient in some nutrient?",
+        "sources": [
+          "25304452",
+          "18403944",
+          "16097998",
+          "22876568",
+          "23224030"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 380,
+        "response_time_ms": 387
+      },
+      {
+        "question_id": "19145527",
+        "question": "Do emergency medical services professionals think they should participate in disease prevention?",
+        "sources": [
+          "19145527",
+          "27690714",
+          "17691856",
+          "21914194",
+          "25280365"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 467,
+        "response_time_ms": 473
+      },
+      {
+        "question_id": "27615402",
+        "question": "Does the familial transmission of drinking patterns persist into young adulthood?",
+        "sources": [
+          "27615402",
+          "23025584",
+          "25699562",
+          "21569408",
+          "17295865"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 330,
+        "response_time_ms": 336
+      },
+      {
+        "question_id": "12153648",
+        "question": "Does birth center care during a woman's first pregnancy have any impact on her future reproduction?",
+        "sources": [
+          "12153648",
+          "24074624",
+          "17051586",
+          "24160268",
+          "23497210"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 447,
+        "response_time_ms": 458
+      },
+      {
+        "question_id": "17919952",
+        "question": "Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?",
+        "sources": [
+          "17919952",
+          "23252468",
+          "21951591",
+          "17276801",
+          "25499207"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 434,
+        "response_time_ms": 441
+      },
+      {
+        "question_id": "26383908",
+        "question": "Does concept mapping enhance learning outcome of nursing students?",
+        "sources": [
+          "26383908",
+          "21228436",
+          "18378554",
+          "10354335",
+          "21368683"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 5,
+        "generation_time_ms": 309,
+        "response_time_ms": 314
+      },
+      {
+        "question_id": "25488308",
+        "question": "Can bone thickness and inter-radicular space affect miniscrew placement in posterior mandibular sites?",
+        "sources": [
+          "25488308",
+          "18784527",
+          "24245816",
+          "17279467",
+          "27991408"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 7,
+        "generation_time_ms": 381,
+        "response_time_ms": 388
+      },
+      {
+        "question_id": "23949294",
+        "question": "Treatment as prevention in resource-limited settings: is it feasible to maintain HIV viral load suppression over time?",
+        "sources": [
+          "23949294",
+          "15280782",
+          "22117569",
+          "18019905",
+          "20121683"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 352,
+        "response_time_ms": 360
+      },
+      {
+        "question_id": "26104852",
+        "question": "Can echocardiography and ECG discriminate hereditary transthyretin V30M amyloidosis from hypertrophic cardiomyopathy?",
+        "sources": [
+          "26104852",
+          "27131771",
+          "16713745",
+          "25592625",
+          "26505821"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 6,
+        "generation_time_ms": 370,
+        "response_time_ms": 376
+      },
+      {
+        "question_id": "24153338",
+        "question": "Is aneurysm repair justified for the patients aged 80 or older after aneurysmal subarachnoid hemorrhage?",
+        "sources": [
+          "24153338",
+          "12765819",
+          "14652839",
+          "19351635",
+          "26859535"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 464,
+        "response_time_ms": 472
+      },
+      {
+        "question_id": "23848044",
+        "question": "Does oxybutynin hydrochloride cause arrhythmia in children with bladder dysfunction?",
+        "sources": [
+          "23848044",
+          "18179827",
+          "23810330",
+          "25501465",
+          "20497880"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 416,
+        "response_time_ms": 428
+      },
+      {
+        "question_id": "22668852",
+        "question": "Do African American women require fewer calories to maintain weight?",
+        "sources": [
+          "22668852",
+          "17682349",
+          "21123461",
+          "19615731",
+          "20736672"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 457,
+        "response_time_ms": 471
+      },
+      {
+        "question_id": "19401574",
+        "question": "Gadofosveset-enhanced MR angiography of carotid arteries: does steady-state imaging improve accuracy of first-pass imaging?",
+        "sources": [
+          "19401574",
+          "14745753",
+          "24507422",
+          "21904069",
+          "26209118"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 496,
+        "response_time_ms": 509
+      },
+      {
+        "question_id": "12595848",
+        "question": "Is specialty care associated with improved survival of patients with congestive heart failure?",
+        "sources": [
+          "12595848",
+          "18507507",
+          "21850494",
+          "26237424",
+          "15708048"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 503,
+        "response_time_ms": 519
+      },
+      {
+        "question_id": "25985014",
+        "question": "Is ganglionated plexi ablation during Maze IV procedure beneficial for postoperative long-term stable sinus rhythm?",
+        "sources": [
+          "25985014",
+          "21946341",
+          "17306983",
+          "18269157",
+          "17208539"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 486,
+        "response_time_ms": 494
+      }
+    ],
+    "rag_dense": [
+      {
+        "question_id": "10922093",
+        "question": "Does open access endoscopy close the door to an adequately informed patient?",
+        "sources": [
+          "10922093",
+          "25251991",
+          "27989969",
+          "23831910",
+          "21194998"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 76,
+        "generation_time_ms": 759,
+        "response_time_ms": 835
+      },
+      {
+        "question_id": "15388567",
+        "question": "Are sports medicine journals relevant and applicable to practitioners and athletes?",
+        "sources": [
+          "15388567",
+          "26200172",
+          "24340838",
+          "22683044",
+          "26556589"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 35,
+        "generation_time_ms": 547,
+        "response_time_ms": 582
+      },
+      {
+        "question_id": "11334578",
+        "question": "Is there awareness of pharmaceutical expenditure in the reformed primary care system?",
+        "sources": [
+          "11334578",
+          "18507507",
+          "15502995",
+          "17076590",
+          "15000338"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 28,
+        "generation_time_ms": 457,
+        "response_time_ms": 485
+      },
+      {
+        "question_id": "25735444",
+        "question": "Rectal cancer threatening or affecting the prostatic plane: is partial prostatectomy oncologically adequate?",
+        "sources": [
+          "25735444",
+          "15708048",
+          "25489696",
+          "14713788",
+          "18568239"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 502,
+        "response_time_ms": 516
+      },
+      {
+        "question_id": "26298839",
+        "question": "Is Acupuncture Efficacious for Treating Phonotraumatic Vocal Pathologies?",
+        "sources": [
+          "26298839",
+          "20842006",
+          "23228527",
+          "25691513",
+          "16296668"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 29,
+        "generation_time_ms": 454,
+        "response_time_ms": 483
+      },
+      {
+        "question_id": "19327500",
+        "question": "Gender difference in survival of resected non-small cell lung cancer: histology-related phenomenon?",
+        "sources": [
+          "19327500",
+          "11888773",
+          "16968876",
+          "16827975",
+          "23719685"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 44,
+        "generation_time_ms": 640,
+        "response_time_ms": 684
+      },
+      {
+        "question_id": "22427593",
+        "question": "Are normally sighted, visually impaired, and blind pedestrians accurate and reliable at making street crossing decisions?",
+        "sources": [
+          "22427593",
+          "16418930",
+          "21865668",
+          "21823940",
+          "15995461"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 33,
+        "generation_time_ms": 404,
+        "response_time_ms": 437
+      },
+      {
+        "question_id": "23916653",
+        "question": "Orthostatic myoclonus: an underrecognized cause of unsteadiness?",
+        "sources": [
+          "23916653",
+          "25756710",
+          "22497340",
+          "25592625",
+          "20594006"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 21,
+        "generation_time_ms": 409,
+        "response_time_ms": 430
+      },
+      {
+        "question_id": "21398266",
+        "question": "Do symptoms matter when considering patients for phase I clinical trials?",
+        "sources": [
+          "21252642",
+          "17601244",
+          "15588538",
+          "12920330",
+          "21398266"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 33,
+        "generation_time_ms": 385,
+        "response_time_ms": 418
+      },
+      {
+        "question_id": "21904069",
+        "question": "Spleen-preserving distal pancreatectomy with resection of the splenic vessels. Should one rely on the short gastric arteries?",
+        "sources": [
+          "21904069",
+          "24073931",
+          "26063028",
+          "16432652",
+          "20530150"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 38,
+        "generation_time_ms": 461,
+        "response_time_ms": 499
+      },
+      {
+        "question_id": "24748473",
+        "question": "Are there risk factors that increase the rate of staple line leakage in patients undergoing primary sleeve gastrectomy for morbid obesity?",
+        "sources": [
+          "24748473",
+          "24476003",
+          "24827404",
+          "25480629",
+          "22011946"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 21,
+        "generation_time_ms": 409,
+        "response_time_ms": 430
+      },
+      {
+        "question_id": "17312514",
+        "question": "Does quilting suture prevent seroma in abdominoplasty?",
+        "sources": [
+          "17312514",
+          "9722752",
+          "21979183",
+          "27136599",
+          "18439500"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 488,
+        "response_time_ms": 503
+      },
+      {
+        "question_id": "25501465",
+        "question": "Evaluation of pediatric VCUG at an academic children's hospital: is the radiographic scout image necessary?",
+        "sources": [
+          "25501465",
+          "10966337",
+          "17329379",
+          "16564683",
+          "9142039"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 36,
+        "generation_time_ms": 493,
+        "response_time_ms": 529
+      },
+      {
+        "question_id": "12442934",
+        "question": "Does ibuprofen increase perioperative blood loss during hip arthroplasty?",
+        "sources": [
+          "12442934",
+          "23359100",
+          "21164063",
+          "22758782",
+          "22154448"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 353,
+        "response_time_ms": 367
+      },
+      {
+        "question_id": "15466981",
+        "question": "Prostate-specific antigen and free prostate-specific antigen in the early detection of prostate cancer: do combination tests improve detection?",
+        "sources": [
+          "15466981",
+          "15708048",
+          "20608141",
+          "23792130",
+          "23806388"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 33,
+        "generation_time_ms": 398,
+        "response_time_ms": 431
+      },
+      {
+        "question_id": "24519615",
+        "question": "Does patella position influence ligament balancing in total knee arthroplasty?",
+        "sources": [
+          "24519615",
+          "23568387",
+          "25043083",
+          "15687156",
+          "24996865"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 18,
+        "generation_time_ms": 387,
+        "response_time_ms": 405
+      },
+      {
+        "question_id": "26965932",
+        "question": "Is Bare-Metal Stent Implantation Still Justifiable in High Bleeding Risk Patients Undergoing Percutaneous Coronary Intervention?",
+        "sources": [
+          "26965932",
+          "16216859",
+          "23870157",
+          "16538201",
+          "18926458"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 393,
+        "response_time_ms": 408
+      },
+      {
+        "question_id": "21402341",
+        "question": "Assessment of carotid artery stenosis before coronary artery bypass surgery. Is it always necessary?",
+        "sources": [
+          "21402341",
+          "18926458",
+          "19401574",
+          "10732884",
+          "16216859"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 434,
+        "response_time_ms": 448
+      },
+      {
+        "question_id": "27394685",
+        "question": "Bony defects in chronic anterior posttraumatic dislocation of the shoulder: Is there a correlation between humeral and glenoidal lesions?",
+        "sources": [
+          "27394685",
+          "24652474",
+          "22955530",
+          "16991071",
+          "24698298"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 402,
+        "response_time_ms": 416
+      },
+      {
+        "question_id": "23587089",
+        "question": "School food policy at Dutch primary schools: room for improvement?",
+        "sources": [
+          "23587089",
+          "18801797",
+          "16266387",
+          "27549226",
+          "19757704"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 431,
+        "response_time_ms": 443
+      },
+      {
+        "question_id": "9363244",
+        "question": "Does occupational nuclear power plant radiation affect conception and pregnancy?",
+        "sources": [
+          "9363244",
+          "16253970",
+          "16510651",
+          "17403428",
+          "12153648"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 310,
+        "response_time_ms": 326
+      },
+      {
+        "question_id": "26209118",
+        "question": "Utility of unenhanced fat-suppressed T1-weighted MRI in children with sickle cell disease -- can it differentiate bone infarcts from acute osteomyelitis?",
+        "sources": [
+          "26209118",
+          "9465206",
+          "26085176",
+          "23449952",
+          "23096188"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "no",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 474,
+        "response_time_ms": 487
+      },
+      {
+        "question_id": "16510651",
+        "question": "Birth characteristics and risk of low intellectual performance in early adulthood: are the associations confounded by socioeconomic factors in adolescence or familial effects?",
+        "sources": [
+          "16510651",
+          "25752725",
+          "24922528",
+          "23414523",
+          "25752912"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 321,
+        "response_time_ms": 333
+      },
+      {
+        "question_id": "11555508",
+        "question": "Do inhaled corticosteroids affect perception of dyspnea during bronchoconstriction in asthma?",
+        "sources": [
+          "11555508",
+          "24785562",
+          "20363841",
+          "27044366",
+          "17453263"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 17,
+        "generation_time_ms": 480,
+        "response_time_ms": 497
+      },
+      {
+        "question_id": "25487603",
+        "question": "Analysis of the epidemiological pattern of Shigellosis in Barcelona between 1988 and 2012: Is it an emerging sexually transmitted infection?",
+        "sources": [
+          "25487603",
+          "17105833",
+          "16816043",
+          "20971618",
+          "12913347"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 423,
+        "response_time_ms": 434
+      },
+      {
+        "question_id": "25155638",
+        "question": "Can routine offering of influenza vaccination in office-based settings reduce racial and ethnic disparities in adult influenza vaccination?",
+        "sources": [
+          "25155638",
+          "8111516",
+          "17096624",
+          "27642458",
+          "12238307"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 23,
+        "generation_time_ms": 413,
+        "response_time_ms": 436
+      },
+      {
+        "question_id": "21394762",
+        "question": "Is pelvic pain associated with defecatory symptoms in women with pelvic organ prolapse?",
+        "sources": [
+          "21394762",
+          "24809662",
+          "12377809",
+          "20850631",
+          "9003088"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 23,
+        "generation_time_ms": 470,
+        "response_time_ms": 493
+      },
+      {
+        "question_id": "15112004",
+        "question": "Are WHO/UNAIDS/UNICEF-recommended replacement milks for infants of HIV-infected mothers appropriate in the South African context?",
+        "sources": [
+          "15112004",
+          "18019905",
+          "21214884",
+          "28196511",
+          "27642458"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Maybe",
+        "prediction": "maybe",
+        "gold_answer": "no",
+        "retrieval_time_ms": 24,
+        "generation_time_ms": 419,
+        "response_time_ms": 443
+      },
+      {
+        "question_id": "17595200",
+        "question": "Is there an intrauterine influence on obesity?",
+        "sources": [
+          "17595200",
+          "25034219",
+          "18719011",
+          "22532370",
+          "22813804"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 23,
+        "generation_time_ms": 396,
+        "response_time_ms": 419
+      },
+      {
+        "question_id": "18928979",
+        "question": "Can myometrial electrical activity identify patients in preterm labor?",
+        "sources": [
+          "18928979",
+          "26215326",
+          "11776681",
+          "12153648",
+          "25255719"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 25,
+        "generation_time_ms": 482,
+        "response_time_ms": 507
+      },
+      {
+        "question_id": "19108857",
+        "question": "Cerebromediastinal tuberculosis in a child with a probable Say-Barber-Miller syndrome: a causative link?",
+        "sources": [
+          "19108857",
+          "12848629",
+          "14968373",
+          "16778275",
+          "26923375"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 18,
+        "generation_time_ms": 353,
+        "response_time_ms": 371
+      },
+      {
+        "question_id": "11053064",
+        "question": "Fatigue in primary Sj\u00f6gren's syndrome: is there a link with the fibromyalgia syndrome?",
+        "sources": [
+          "11053064",
+          "23386371",
+          "24235894",
+          "12690589",
+          "22522271"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 411,
+        "response_time_ms": 426
+      },
+      {
+        "question_id": "21848798",
+        "question": "MiraLAX vs. Golytely: is there a significant difference in the adenoma detection rate?",
+        "sources": [
+          "21848798",
+          "19237087",
+          "25614468",
+          "17593459",
+          "19131405"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 393,
+        "response_time_ms": 408
+      },
+      {
+        "question_id": "11776681",
+        "question": "Is intrapartum vibroacoustic stimulation an effective predictor of fetal acidosis?",
+        "sources": [
+          "11776681",
+          "17051586",
+          "17715311",
+          "22680064",
+          "18570208"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 417,
+        "response_time_ms": 429
+      },
+      {
+        "question_id": "23870157",
+        "question": "Are intraoperative precursor events associated with postoperative major adverse events?",
+        "sources": [
+          "23870157",
+          "24666444",
+          "25982163",
+          "12442934",
+          "17621202"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 351,
+        "response_time_ms": 363
+      },
+      {
+        "question_id": "15381614",
+        "question": "Cutaneous melanoma in a multiethnic population: is this a different disease?",
+        "sources": [
+          "15381614",
+          "24434052",
+          "11955750",
+          "15223779",
+          "20971618"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 367,
+        "response_time_ms": 379
+      },
+      {
+        "question_id": "22350859",
+        "question": "Can pictorial warning labels on cigarette packages address smoking-related health disparities?",
+        "sources": [
+          "22350859",
+          "21669959",
+          "17565137",
+          "20363841",
+          "17259061"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 378,
+        "response_time_ms": 394
+      },
+      {
+        "question_id": "18284441",
+        "question": "Expression of c-kit protooncogen in hepatitis B virus-induced chronic hepatitis, cirrhosis and hepatocellular carcinoma: has it a diagnostic role?",
+        "sources": [
+          "18284441",
+          "11926574",
+          "8847047",
+          "17295865",
+          "23052500"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 418,
+        "response_time_ms": 431
+      },
+      {
+        "question_id": "25481573",
+        "question": "Processing fluency effects: can the content and presentation of participant information sheets influence recruitment and participation for an antenatal intervention?",
+        "sources": [
+          "25481573",
+          "15918864",
+          "25079920",
+          "12153648",
+          "27884344"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 348,
+        "response_time_ms": 361
+      },
+      {
+        "question_id": "10749257",
+        "question": "Has the mammography quality standards act affected the mammography quality in North Carolina?",
+        "sources": [
+          "10749257",
+          "10808977",
+          "26471488",
+          "15528969",
+          "23736032"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 348,
+        "response_time_ms": 360
+      },
+      {
+        "question_id": "23177368",
+        "question": "Does immediate breast reconstruction compromise the delivery of adjuvant chemotherapy?",
+        "sources": [
+          "23177368",
+          "24946973",
+          "14692023",
+          "12419743",
+          "26471488"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 18,
+        "generation_time_ms": 376,
+        "response_time_ms": 394
+      },
+      {
+        "question_id": "11838307",
+        "question": "Cold knife conization vs. LEEP. Are they the same procedure?",
+        "sources": [
+          "11838307",
+          "26471488",
+          "23412195",
+          "12380309",
+          "25810292"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 367,
+        "response_time_ms": 380
+      },
+      {
+        "question_id": "12855939",
+        "question": "Is ankle/arm pressure predictive for cardiovascular mortality in older patients living in nursing homes?",
+        "sources": [
+          "12855939",
+          "21084567",
+          "26237424",
+          "18800356",
+          "9920954"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 459,
+        "response_time_ms": 471
+      },
+      {
+        "question_id": "15588538",
+        "question": "Chronic functional somatic symptoms: a single syndrome?",
+        "sources": [
+          "15588538",
+          "12920330",
+          "11053064",
+          "8262881",
+          "16403186"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 34,
+        "generation_time_ms": 520,
+        "response_time_ms": 554
+      },
+      {
+        "question_id": "23375036",
+        "question": "An HIV1/2 point of care test on sputum for screening TB/HIV co-infection in Central India - Will it work?",
+        "sources": [
+          "23375036",
+          "21756515",
+          "19103915",
+          "9792366",
+          "25793749"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 40,
+        "generation_time_ms": 464,
+        "response_time_ms": 504
+      },
+      {
+        "question_id": "18319270",
+        "question": "Does confined placental mosaicism account for adverse perinatal outcomes in IVF pregnancies?",
+        "sources": [
+          "18319270",
+          "16147837",
+          "25752912",
+          "17403428",
+          "18570208"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 32,
+        "generation_time_ms": 461,
+        "response_time_ms": 493
+      },
+      {
+        "question_id": "12846929",
+        "question": "Quality of life in lung cancer patients: does socioeconomic status matter?",
+        "sources": [
+          "12846929",
+          "16968876",
+          "23719685",
+          "16827975",
+          "9278754"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 26,
+        "generation_time_ms": 384,
+        "response_time_ms": 410
+      },
+      {
+        "question_id": "28127977",
+        "question": "Are serum leptin levels a prognostic factor in advanced lung cancer?",
+        "sources": [
+          "28127977",
+          "22237146",
+          "25787073",
+          "19931500",
+          "23719685"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 362,
+        "response_time_ms": 374
+      },
+      {
+        "question_id": "14968373",
+        "question": "Can CT predict the level of CSF block in tuberculous hydrocephalus?",
+        "sources": [
+          "14968373",
+          "19108857",
+          "12848629",
+          "16778275",
+          "8985020"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 369,
+        "response_time_ms": 382
+      },
+      {
+        "question_id": "22042121",
+        "question": "Perioperative care in an animal model for training in abdominal surgery: is it necessary a preoperative fasting?",
+        "sources": [
+          "22042121",
+          "22694248",
+          "24061619",
+          "8200238",
+          "16432652"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 398,
+        "response_time_ms": 411
+      },
+      {
+        "question_id": "26859535",
+        "question": "Screening History Among Women with Invasive Cervical Cancer in an Academic Medical Center: Will We Miss Cancers Following Updated Guidelines?",
+        "sources": [
+          "26859535",
+          "10575390",
+          "18714572",
+          "27216167",
+          "21481154"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 393,
+        "response_time_ms": 406
+      },
+      {
+        "question_id": "19103915",
+        "question": "Are home sampling kits for sexually transmitted infections acceptable among men who have sex with men?",
+        "sources": [
+          "19103915",
+          "25793749",
+          "12913347",
+          "16816043",
+          "9792366"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 31,
+        "generation_time_ms": 463,
+        "response_time_ms": 494
+      },
+      {
+        "question_id": "22694248",
+        "question": "Is there a model to teach and practice retroperitoneoscopic nephrectomy?",
+        "sources": [
+          "22694248",
+          "20674150",
+          "17192736",
+          "10354335",
+          "19409117"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 403,
+        "response_time_ms": 416
+      },
+      {
+        "question_id": "17008699",
+        "question": "Do patients with localized prostate cancer treatment really want more aggressive treatment?",
+        "sources": [
+          "17008699",
+          "14697414",
+          "12947068",
+          "23806388",
+          "18472368"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 413,
+        "response_time_ms": 426
+      },
+      {
+        "question_id": "12006913",
+        "question": "Do lipids, blood pressure, diabetes, and smoking confer equal risk of myocardial infarction in women as in men?",
+        "sources": [
+          "12006913",
+          "17113061",
+          "25150098",
+          "16319544",
+          "22990761"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 427,
+        "response_time_ms": 440
+      },
+      {
+        "question_id": "12913347",
+        "question": "Do microbiological factors account for poor pregnancy outcome among unmarried pregnant women in Poland?",
+        "sources": [
+          "12913347",
+          "27405146",
+          "18019905",
+          "12153648",
+          "17220021"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 26,
+        "generation_time_ms": 332,
+        "response_time_ms": 358
+      },
+      {
+        "question_id": "18472368",
+        "question": "Does treatment duration affect outcome after radiotherapy for prostate cancer?",
+        "sources": [
+          "18472368",
+          "14697414",
+          "12947068",
+          "17008699",
+          "25735444"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 446,
+        "response_time_ms": 457
+      },
+      {
+        "question_id": "15787677",
+        "question": "Does aerobic fitness influence microvascular function in healthy adults at risk of developing Type 2 diabetes?",
+        "sources": [
+          "15787677",
+          "15939071",
+          "12145243",
+          "23224030",
+          "22720085"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 38,
+        "generation_time_ms": 441,
+        "response_time_ms": 479
+      },
+      {
+        "question_id": "26485091",
+        "question": "Does the use of atypical antipsychotics as adjunctive therapy in depression result in cost savings?",
+        "sources": [
+          "26485091",
+          "18832500",
+          "26370095",
+          "27448572",
+          "17076590"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 24,
+        "generation_time_ms": 463,
+        "response_time_ms": 487
+      },
+      {
+        "question_id": "22302658",
+        "question": "Does limb-salvage surgery offer patients better quality of life and functional capacity than amputation?",
+        "sources": [
+          "22302658",
+          "11149643",
+          "27908583",
+          "23568387",
+          "24901580"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 36,
+        "generation_time_ms": 352,
+        "response_time_ms": 388
+      },
+      {
+        "question_id": "19643525",
+        "question": "Can vaginal pH be measured from the wet mount slide?",
+        "sources": [
+          "19643525",
+          "14992556",
+          "11776681",
+          "26778755",
+          "21394762"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 26,
+        "generation_time_ms": 453,
+        "response_time_ms": 479
+      },
+      {
+        "question_id": "20064872",
+        "question": "Can the prognosis of polymyalgia rheumatica be predicted at disease onset?",
+        "sources": [
+          "27991408",
+          "14655021",
+          "17601244",
+          "11053064",
+          "10783841"
+        ],
+        "gold_doc_in_top_k": false,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 35,
+        "generation_time_ms": 400,
+        "response_time_ms": 435
+      },
+      {
+        "question_id": "19923859",
+        "question": "Can T-cell deficiency affect spatial learning ability following toluene exposure?",
+        "sources": [
+          "19923859",
+          "16418930",
+          "18235194",
+          "24577079",
+          "27757987"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 335,
+        "response_time_ms": 348
+      },
+      {
+        "question_id": "27338535",
+        "question": "Do risk calculators accurately predict surgical site\u00a0occurrences?",
+        "sources": [
+          "27338535",
+          "26222664",
+          "22491528",
+          "21166749",
+          "26864326"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 432,
+        "response_time_ms": 444
+      },
+      {
+        "question_id": "28027677",
+        "question": "Do prerecorded lecture VODcasts affect lecture attendance of first-yearpre-clinical Graduate Entry to Medicine students?",
+        "sources": [
+          "28027677",
+          "24973051",
+          "22251324",
+          "21346501",
+          "21889895"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 335,
+        "response_time_ms": 347
+      },
+      {
+        "question_id": "24318956",
+        "question": "Is digoxin use for cardiovascular disease associated with risk of prostate cancer?",
+        "sources": [
+          "24318956",
+          "18472368",
+          "12006913",
+          "15208005",
+          "18041059"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 387,
+        "response_time_ms": 401
+      },
+      {
+        "question_id": "21569408",
+        "question": "Does context matter for the relationship between deprivation and all-cause mortality?",
+        "sources": [
+          "21569408",
+          "16956164",
+          "22205377",
+          "24751724",
+          "20602784"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 366,
+        "response_time_ms": 379
+      },
+      {
+        "question_id": "11729377",
+        "question": "Is there still a need for living-related liver transplantation in children?",
+        "sources": [
+          "11729377",
+          "21850494",
+          "20571467",
+          "9044116",
+          "22644412"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 19,
+        "generation_time_ms": 472,
+        "response_time_ms": 491
+      },
+      {
+        "question_id": "20871246",
+        "question": "Young-Burgess classification of pelvic ring fractures: does it predict mortality, transfusion requirements, and non-orthopaedic injuries?",
+        "sources": [
+          "20871246",
+          "24630333",
+          "18496363",
+          "26606599",
+          "22955530"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 27,
+        "generation_time_ms": 404,
+        "response_time_ms": 431
+      },
+      {
+        "question_id": "16418930",
+        "question": "Landolt C and snellen e acuity: differences in strabismus amblyopia?",
+        "sources": [
+          "16418930",
+          "10966943",
+          "27757987",
+          "22497340",
+          "10877371"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 320,
+        "response_time_ms": 333
+      },
+      {
+        "question_id": "20084845",
+        "question": "Biomolecular identification of allergenic pollen: a new perspective for aerobiological monitoring?",
+        "sources": [
+          "20084845",
+          "24516646",
+          "15539888",
+          "16266387",
+          "24359102"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 391,
+        "response_time_ms": 406
+      },
+      {
+        "question_id": "21850494",
+        "question": "Hepatorenal syndrome: are we missing some prognostic factors?",
+        "sources": [
+          "21850494",
+          "22644412",
+          "8847047",
+          "24799031",
+          "23052500"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 365,
+        "response_time_ms": 377
+      },
+      {
+        "question_id": "10331115",
+        "question": "Is amoxapine an atypical antipsychotic?",
+        "sources": [
+          "10331115",
+          "26485091",
+          "24315783",
+          "26818046",
+          "19822586"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 299,
+        "response_time_ms": 311
+      },
+      {
+        "question_id": "10605400",
+        "question": "Is the international normalised ratio (INR) reliable?",
+        "sources": [
+          "10605400",
+          "22411435",
+          "26864326",
+          "22972546",
+          "24516646"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 388,
+        "response_time_ms": 399
+      },
+      {
+        "question_id": "10757151",
+        "question": "Does ischemic preconditioning require reperfusion before index ischemia?",
+        "sources": [
+          "10757151",
+          "21900017",
+          "21952349",
+          "17462393",
+          "12040336"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 21,
+        "generation_time_ms": 538,
+        "response_time_ms": 559
+      },
+      {
+        "question_id": "21593045",
+        "question": "Do women with ovaries of polycystic morphology without any other features of PCOS benefit from short-term metformin co-treatment during IVF?",
+        "sources": [
+          "21593045",
+          "16414216",
+          "26126304",
+          "16253970",
+          "19542542"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 32,
+        "generation_time_ms": 431,
+        "response_time_ms": 463
+      },
+      {
+        "question_id": "24298614",
+        "question": "Is the 7th TNM edition suitable for biological predictor in early gastric cancer?",
+        "sources": [
+          "24298614",
+          "25614468",
+          "24599411",
+          "25604390",
+          "16827975"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 37,
+        "generation_time_ms": 502,
+        "response_time_ms": 539
+      },
+      {
+        "question_id": "21914194",
+        "question": "Health care for immigrants in Europe: is there still consensus among country experts about principles of good practice?",
+        "sources": [
+          "21914194",
+          "22233470",
+          "27549226",
+          "24751724",
+          "20549895"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 43,
+        "generation_time_ms": 581,
+        "response_time_ms": 624
+      },
+      {
+        "question_id": "14518645",
+        "question": "Injury and poisoning mortality among young men--are there any common factors amenable to prevention?",
+        "sources": [
+          "14518645",
+          "18496363",
+          "15995461",
+          "15475728",
+          "25747932"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 33,
+        "generation_time_ms": 379,
+        "response_time_ms": 412
+      },
+      {
+        "question_id": "22075911",
+        "question": "Is there a differential in the dental health of new recruits to the British Armed Forces?",
+        "sources": [
+          "22075911",
+          "9140335",
+          "22251324",
+          "17919952",
+          "10783841"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 34,
+        "generation_time_ms": 306,
+        "response_time_ms": 340
+      },
+      {
+        "question_id": "25070942",
+        "question": "Can mass drug administration lead to the sustainable control of schistosomiasis?",
+        "sources": [
+          "25070942",
+          "22211919",
+          "12632437",
+          "16100194",
+          "20537205"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 394,
+        "response_time_ms": 405
+      },
+      {
+        "question_id": "10877371",
+        "question": "Does head positioning influence anterior chamber depth in pseudoexfoliation syndrome?",
+        "sources": [
+          "10877371",
+          "16249670",
+          "22497340",
+          "26686513",
+          "26778755"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 352,
+        "response_time_ms": 368
+      },
+      {
+        "question_id": "22023714",
+        "question": "Does delivery mode affect women's postpartum quality of life in rural China?",
+        "sources": [
+          "22023714",
+          "22521460",
+          "15918864",
+          "16428354",
+          "27928673"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 380,
+        "response_time_ms": 393
+      },
+      {
+        "question_id": "25521278",
+        "question": "Is plate clearing a risk factor for obesity?",
+        "sources": [
+          "25521278",
+          "21123461",
+          "25034219",
+          "22720085",
+          "22668852"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 20,
+        "generation_time_ms": 381,
+        "response_time_ms": 401
+      },
+      {
+        "question_id": "10548670",
+        "question": "Does the National Institutes of Health Stroke Scale favor left hemisphere strokes?",
+        "sources": [
+          "10548670",
+          "19351635",
+          "11340218",
+          "24669960",
+          "10375486"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes.",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 22,
+        "generation_time_ms": 552,
+        "response_time_ms": 574
+      },
+      {
+        "question_id": "25304452",
+        "question": "Nutritional assessment of gluten-free diet. Is gluten-free diet deficient in some nutrient?",
+        "sources": [
+          "25304452",
+          "18403944",
+          "22876568",
+          "16097998",
+          "23224030"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 421,
+        "response_time_ms": 433
+      },
+      {
+        "question_id": "19145527",
+        "question": "Do emergency medical services professionals think they should participate in disease prevention?",
+        "sources": [
+          "19145527",
+          "24973051",
+          "16100194",
+          "8111516",
+          "20549895"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 32,
+        "generation_time_ms": 427,
+        "response_time_ms": 459
+      },
+      {
+        "question_id": "27615402",
+        "question": "Does the familial transmission of drinking patterns persist into young adulthood?",
+        "sources": [
+          "27615402",
+          "24922528",
+          "23025584",
+          "23414523",
+          "12684740"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 294,
+        "response_time_ms": 307
+      },
+      {
+        "question_id": "12153648",
+        "question": "Does birth center care during a woman's first pregnancy have any impact on her future reproduction?",
+        "sources": [
+          "12153648",
+          "22023714",
+          "16428354",
+          "16147837",
+          "20337202"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 356,
+        "response_time_ms": 368
+      },
+      {
+        "question_id": "17919952",
+        "question": "Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?",
+        "sources": [
+          "17919952",
+          "11567820",
+          "21951591",
+          "18179827",
+          "15588538"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 328,
+        "response_time_ms": 339
+      },
+      {
+        "question_id": "26383908",
+        "question": "Does concept mapping enhance learning outcome of nursing students?",
+        "sources": [
+          "26383908",
+          "26864326",
+          "21745056",
+          "26134053",
+          "24577079"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 10,
+        "generation_time_ms": 320,
+        "response_time_ms": 330
+      },
+      {
+        "question_id": "25488308",
+        "question": "Can bone thickness and inter-radicular space affect miniscrew placement in posterior mandibular sites?",
+        "sources": [
+          "25488308",
+          "24245816",
+          "26419377",
+          "18784527",
+          "26113007"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 316,
+        "response_time_ms": 328
+      },
+      {
+        "question_id": "23949294",
+        "question": "Treatment as prevention in resource-limited settings: is it feasible to maintain HIV viral load suppression over time?",
+        "sources": [
+          "23949294",
+          "21712147",
+          "28196511",
+          "25793749",
+          "15280782"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 449,
+        "response_time_ms": 460
+      },
+      {
+        "question_id": "26104852",
+        "question": "Can echocardiography and ECG discriminate hereditary transthyretin V30M amyloidosis from hypertrophic cardiomyopathy?",
+        "sources": [
+          "26104852",
+          "16403186",
+          "21198823",
+          "25891436",
+          "24449622"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 357,
+        "response_time_ms": 370
+      },
+      {
+        "question_id": "24153338",
+        "question": "Is aneurysm repair justified for the patients aged 80 or older after aneurysmal subarachnoid hemorrhage?",
+        "sources": [
+          "24153338",
+          "14652839",
+          "12765819",
+          "25987398",
+          "17062225"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 295,
+        "response_time_ms": 303
+      },
+      {
+        "question_id": "23848044",
+        "question": "Does oxybutynin hydrochloride cause arrhythmia in children with bladder dysfunction?",
+        "sources": [
+          "23848044",
+          "16498158",
+          "25985014",
+          "18179827",
+          "9488747"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 307,
+        "response_time_ms": 315
+      },
+      {
+        "question_id": "22668852",
+        "question": "Do African American women require fewer calories to maintain weight?",
+        "sources": [
+          "22668852",
+          "21123461",
+          "27581329",
+          "25034219",
+          "19615731"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 380,
+        "response_time_ms": 388
+      },
+      {
+        "question_id": "19401574",
+        "question": "Gadofosveset-enhanced MR angiography of carotid arteries: does steady-state imaging improve accuracy of first-pass imaging?",
+        "sources": [
+          "19401574",
+          "14745753",
+          "24507422",
+          "21402341",
+          "24799031"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 310,
+        "response_time_ms": 318
+      },
+      {
+        "question_id": "12595848",
+        "question": "Is specialty care associated with improved survival of patients with congestive heart failure?",
+        "sources": [
+          "12595848",
+          "26237424",
+          "9920954",
+          "22440363",
+          "26460153"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 462,
+        "response_time_ms": 470
+      },
+      {
+        "question_id": "25985014",
+        "question": "Is ganglionated plexi ablation during Maze IV procedure beneficial for postoperative long-term stable sinus rhythm?",
+        "sources": [
+          "25985014",
+          "17578985",
+          "17914515",
+          "11567820",
+          "27040842"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 8,
+        "generation_time_ms": 301,
+        "response_time_ms": 309
+      }
+    ],
+    "rag_hybrid": [
+      {
+        "question_id": "10922093",
+        "question": "Does open access endoscopy close the door to an adequately informed patient?",
+        "sources": [
+          "10922093",
+          "19237087",
+          "21194998",
+          "22683044",
+          "22365295"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 17,
+        "generation_time_ms": 366,
+        "response_time_ms": 383
+      },
+      {
+        "question_id": "15388567",
+        "question": "Are sports medicine journals relevant and applicable to practitioners and athletes?",
+        "sources": [
+          "15388567",
+          "24340838",
+          "26200172",
+          "22683044",
+          "12094116"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 313,
+        "response_time_ms": 325
+      },
+      {
+        "question_id": "11334578",
+        "question": "Is there awareness of pharmaceutical expenditure in the reformed primary care system?",
+        "sources": [
+          "11334578",
+          "18507507",
+          "18534072",
+          "15000338",
+          "22233470"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 268,
+        "response_time_ms": 283
+      },
+      {
+        "question_id": "25735444",
+        "question": "Rectal cancer threatening or affecting the prostatic plane: is partial prostatectomy oncologically adequate?",
+        "sources": [
+          "25735444",
+          "15708048",
+          "29112560",
+          "12095973",
+          "25489696"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 349,
+        "response_time_ms": 362
+      },
+      {
+        "question_id": "26298839",
+        "question": "Is Acupuncture Efficacious for Treating Phonotraumatic Vocal Pathologies?",
+        "sources": [
+          "26298839",
+          "20842006",
+          "24785562",
+          "24625433",
+          "10575390"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 345,
+        "response_time_ms": 357
+      },
+      {
+        "question_id": "19327500",
+        "question": "Gender difference in survival of resected non-small cell lung cancer: histology-related phenomenon?",
+        "sources": [
+          "19327500",
+          "11888773",
+          "16968876",
+          "16827975",
+          "21618245"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 364,
+        "response_time_ms": 377
+      },
+      {
+        "question_id": "22427593",
+        "question": "Are normally sighted, visually impaired, and blind pedestrians accurate and reliable at making street crossing decisions?",
+        "sources": [
+          "22427593",
+          "23736032",
+          "21823940",
+          "20197761",
+          "20306735"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 18,
+        "generation_time_ms": 356,
+        "response_time_ms": 374
+      },
+      {
+        "question_id": "23916653",
+        "question": "Orthostatic myoclonus: an underrecognized cause of unsteadiness?",
+        "sources": [
+          "23916653",
+          "25756710",
+          "27050489",
+          "11566686",
+          "20130378"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 17,
+        "generation_time_ms": 317,
+        "response_time_ms": 334
+      },
+      {
+        "question_id": "21398266",
+        "question": "Do symptoms matter when considering patients for phase I clinical trials?",
+        "sources": [
+          "21398266",
+          "21252642",
+          "18041059",
+          "15588538",
+          "15670262"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 19,
+        "generation_time_ms": 323,
+        "response_time_ms": 342
+      },
+      {
+        "question_id": "21904069",
+        "question": "Spleen-preserving distal pancreatectomy with resection of the splenic vessels. Should one rely on the short gastric arteries?",
+        "sources": [
+          "21904069",
+          "24073931",
+          "16432652",
+          "10473855",
+          "12607666"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 22,
+        "generation_time_ms": 383,
+        "response_time_ms": 405
+      },
+      {
+        "question_id": "24748473",
+        "question": "Are there risk factors that increase the rate of staple line leakage in patients undergoing primary sleeve gastrectomy for morbid obesity?",
+        "sources": [
+          "24748473",
+          "24476003",
+          "24827404",
+          "25480629",
+          "18322741"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 22,
+        "generation_time_ms": 376,
+        "response_time_ms": 398
+      },
+      {
+        "question_id": "17312514",
+        "question": "Does quilting suture prevent seroma in abdominoplasty?",
+        "sources": [
+          "17312514",
+          "9722752",
+          "24061619",
+          "17306983",
+          "15137012"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 360,
+        "response_time_ms": 376
+      },
+      {
+        "question_id": "25501465",
+        "question": "Evaluation of pediatric VCUG at an academic children's hospital: is the radiographic scout image necessary?",
+        "sources": [
+          "25501465",
+          "10966337",
+          "18607272",
+          "9142039",
+          "24074624"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 20,
+        "generation_time_ms": 407,
+        "response_time_ms": 427
+      },
+      {
+        "question_id": "12442934",
+        "question": "Does ibuprofen increase perioperative blood loss during hip arthroplasty?",
+        "sources": [
+          "12442934",
+          "23359100",
+          "12142826",
+          "22758782",
+          "19130332"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 19,
+        "generation_time_ms": 277,
+        "response_time_ms": 296
+      },
+      {
+        "question_id": "15466981",
+        "question": "Prostate-specific antigen and free prostate-specific antigen in the early detection of prostate cancer: do combination tests improve detection?",
+        "sources": [
+          "15466981",
+          "23792130",
+          "15708048",
+          "20608141",
+          "19836806"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 334,
+        "response_time_ms": 349
+      },
+      {
+        "question_id": "24519615",
+        "question": "Does patella position influence ligament balancing in total knee arthroplasty?",
+        "sources": [
+          "24519615",
+          "23568387",
+          "15687156",
+          "24695920",
+          "25218577"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 378,
+        "response_time_ms": 391
+      },
+      {
+        "question_id": "26965932",
+        "question": "Is Bare-Metal Stent Implantation Still Justifiable in High Bleeding Risk Patients Undergoing Percutaneous Coronary Intervention?",
+        "sources": [
+          "26965932",
+          "16216859",
+          "23870157",
+          "18926458",
+          "24671913"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 20,
+        "generation_time_ms": 395,
+        "response_time_ms": 415
+      },
+      {
+        "question_id": "21402341",
+        "question": "Assessment of carotid artery stenosis before coronary artery bypass surgery. Is it always necessary?",
+        "sources": [
+          "21402341",
+          "18926458",
+          "10732884",
+          "19401574",
+          "23870157"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 383,
+        "response_time_ms": 396
+      },
+      {
+        "question_id": "27394685",
+        "question": "Bony defects in chronic anterior posttraumatic dislocation of the shoulder: Is there a correlation between humeral and glenoidal lesions?",
+        "sources": [
+          "27394685",
+          "24698298",
+          "15954832",
+          "24652474",
+          "24996865"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 365,
+        "response_time_ms": 380
+      },
+      {
+        "question_id": "23587089",
+        "question": "School food policy at Dutch primary schools: room for improvement?",
+        "sources": [
+          "23587089",
+          "18801797",
+          "19757704",
+          "17259061",
+          "16266387"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 378,
+        "response_time_ms": 391
+      },
+      {
+        "question_id": "9363244",
+        "question": "Does occupational nuclear power plant radiation affect conception and pregnancy?",
+        "sources": [
+          "9363244",
+          "16253970",
+          "16647887",
+          "12153648",
+          "27928673"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 272,
+        "response_time_ms": 286
+      },
+      {
+        "question_id": "26209118",
+        "question": "Utility of unenhanced fat-suppressed T1-weighted MRI in children with sickle cell disease -- can it differentiate bone infarcts from acute osteomyelitis?",
+        "sources": [
+          "26209118",
+          "9465206",
+          "26085176",
+          "27991408",
+          "23096188"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "no",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 21,
+        "generation_time_ms": 419,
+        "response_time_ms": 440
+      },
+      {
+        "question_id": "16510651",
+        "question": "Birth characteristics and risk of low intellectual performance in early adulthood: are the associations confounded by socioeconomic factors in adolescence or familial effects?",
+        "sources": [
+          "16510651",
+          "27615402",
+          "21558951",
+          "12153648",
+          "23414523"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 278,
+        "response_time_ms": 294
+      },
+      {
+        "question_id": "11555508",
+        "question": "Do inhaled corticosteroids affect perception of dyspnea during bronchoconstriction in asthma?",
+        "sources": [
+          "11555508",
+          "24785562",
+          "17453263",
+          "15841770",
+          "27044366"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 380,
+        "response_time_ms": 393
+      },
+      {
+        "question_id": "25487603",
+        "question": "Analysis of the epidemiological pattern of Shigellosis in Barcelona between 1988 and 2012: Is it an emerging sexually transmitted infection?",
+        "sources": [
+          "25487603",
+          "16816043",
+          "9792366",
+          "20971618",
+          "25070942"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 22,
+        "generation_time_ms": 374,
+        "response_time_ms": 396
+      },
+      {
+        "question_id": "25155638",
+        "question": "Can routine offering of influenza vaccination in office-based settings reduce racial and ethnic disparities in adult influenza vaccination?",
+        "sources": [
+          "25155638",
+          "8111516",
+          "12238307",
+          "27642458",
+          "17096624"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 296,
+        "response_time_ms": 311
+      },
+      {
+        "question_id": "21394762",
+        "question": "Is pelvic pain associated with defecatory symptoms in women with pelvic organ prolapse?",
+        "sources": [
+          "21394762",
+          "24809662",
+          "22706226",
+          "25489696",
+          "12090319"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 371,
+        "response_time_ms": 385
+      },
+      {
+        "question_id": "15112004",
+        "question": "Are WHO/UNAIDS/UNICEF-recommended replacement milks for infants of HIV-infected mothers appropriate in the South African context?",
+        "sources": [
+          "15112004",
+          "16428354",
+          "28196511",
+          "18019905",
+          "9603166"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 365,
+        "response_time_ms": 380
+      },
+      {
+        "question_id": "17595200",
+        "question": "Is there an intrauterine influence on obesity?",
+        "sources": [
+          "17595200",
+          "22813804",
+          "24748473",
+          "22532370",
+          "16253970"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 274,
+        "response_time_ms": 285
+      },
+      {
+        "question_id": "18928979",
+        "question": "Can myometrial electrical activity identify patients in preterm labor?",
+        "sources": [
+          "18928979",
+          "11776681",
+          "26215326",
+          "23690198",
+          "12690589"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 371,
+        "response_time_ms": 383
+      },
+      {
+        "question_id": "19108857",
+        "question": "Cerebromediastinal tuberculosis in a child with a probable Say-Barber-Miller syndrome: a causative link?",
+        "sources": [
+          "19108857",
+          "12848629",
+          "26923375",
+          "17593459",
+          "23337545"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 345,
+        "response_time_ms": 359
+      },
+      {
+        "question_id": "11053064",
+        "question": "Fatigue in primary Sj\u00f6gren's syndrome: is there a link with the fibromyalgia syndrome?",
+        "sources": [
+          "11053064",
+          "12690589",
+          "18575014",
+          "17606778",
+          "20842006"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 299,
+        "response_time_ms": 314
+      },
+      {
+        "question_id": "21848798",
+        "question": "MiraLAX vs. Golytely: is there a significant difference in the adenoma detection rate?",
+        "sources": [
+          "21848798",
+          "19237087",
+          "18182265",
+          "20608141",
+          "24061619"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 372,
+        "response_time_ms": 385
+      },
+      {
+        "question_id": "11776681",
+        "question": "Is intrapartum vibroacoustic stimulation an effective predictor of fetal acidosis?",
+        "sources": [
+          "11776681",
+          "17715311",
+          "24446763",
+          "9542484",
+          "18570208"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 425,
+        "response_time_ms": 438
+      },
+      {
+        "question_id": "23870157",
+        "question": "Are intraoperative precursor events associated with postoperative major adverse events?",
+        "sources": [
+          "23870157",
+          "24666444",
+          "12442934",
+          "21276532",
+          "18847643"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 319,
+        "response_time_ms": 331
+      },
+      {
+        "question_id": "15381614",
+        "question": "Cutaneous melanoma in a multiethnic population: is this a different disease?",
+        "sources": [
+          "15381614",
+          "24434052",
+          "15223779",
+          "20971618",
+          "26820719"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 370,
+        "response_time_ms": 383
+      },
+      {
+        "question_id": "22350859",
+        "question": "Can pictorial warning labels on cigarette packages address smoking-related health disparities?",
+        "sources": [
+          "22350859",
+          "21669959",
+          "17259061",
+          "23076787",
+          "17565137"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 309,
+        "response_time_ms": 321
+      },
+      {
+        "question_id": "18284441",
+        "question": "Expression of c-kit protooncogen in hepatitis B virus-induced chronic hepatitis, cirrhosis and hepatocellular carcinoma: has it a diagnostic role?",
+        "sources": [
+          "18284441",
+          "11926574",
+          "17295865",
+          "25636371",
+          "15223779"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 17,
+        "generation_time_ms": 355,
+        "response_time_ms": 372
+      },
+      {
+        "question_id": "25481573",
+        "question": "Processing fluency effects: can the content and presentation of participant information sheets influence recruitment and participation for an antenatal intervention?",
+        "sources": [
+          "25481573",
+          "24374414",
+          "21880023",
+          "22350859",
+          "17910536"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 323,
+        "response_time_ms": 339
+      },
+      {
+        "question_id": "10749257",
+        "question": "Has the mammography quality standards act affected the mammography quality in North Carolina?",
+        "sources": [
+          "10749257",
+          "10808977",
+          "19268855",
+          "24783217",
+          "15151701"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 333,
+        "response_time_ms": 346
+      },
+      {
+        "question_id": "23177368",
+        "question": "Does immediate breast reconstruction compromise the delivery of adjuvant chemotherapy?",
+        "sources": [
+          "23177368",
+          "12419743",
+          "14692023",
+          "24946973",
+          "24783217"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 316,
+        "response_time_ms": 328
+      },
+      {
+        "question_id": "11838307",
+        "question": "Cold knife conization vs. LEEP. Are they the same procedure?",
+        "sources": [
+          "11838307",
+          "11567820",
+          "23539689",
+          "20538207",
+          "24476003"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 329,
+        "response_time_ms": 344
+      },
+      {
+        "question_id": "12855939",
+        "question": "Is ankle/arm pressure predictive for cardiovascular mortality in older patients living in nursing homes?",
+        "sources": [
+          "12855939",
+          "22012962",
+          "21084567",
+          "23774337",
+          "9920954"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 21,
+        "generation_time_ms": 392,
+        "response_time_ms": 413
+      },
+      {
+        "question_id": "15588538",
+        "question": "Chronic functional somatic symptoms: a single syndrome?",
+        "sources": [
+          "15588538",
+          "12920330",
+          "11138995",
+          "27592038",
+          "11053064"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 313,
+        "response_time_ms": 328
+      },
+      {
+        "question_id": "23375036",
+        "question": "An HIV1/2 point of care test on sputum for screening TB/HIV co-infection in Central India - Will it work?",
+        "sources": [
+          "23375036",
+          "21756515",
+          "15280782",
+          "28196511",
+          "25793749"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 22,
+        "generation_time_ms": 393,
+        "response_time_ms": 415
+      },
+      {
+        "question_id": "18319270",
+        "question": "Does confined placental mosaicism account for adverse perinatal outcomes in IVF pregnancies?",
+        "sources": [
+          "18319270",
+          "27928673",
+          "26126304",
+          "22521460",
+          "28247485"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 18,
+        "generation_time_ms": 362,
+        "response_time_ms": 380
+      },
+      {
+        "question_id": "12846929",
+        "question": "Quality of life in lung cancer patients: does socioeconomic status matter?",
+        "sources": [
+          "12846929",
+          "16968876",
+          "27216167",
+          "19327500",
+          "9278754"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 17,
+        "generation_time_ms": 344,
+        "response_time_ms": 361
+      },
+      {
+        "question_id": "28127977",
+        "question": "Are serum leptin levels a prognostic factor in advanced lung cancer?",
+        "sources": [
+          "28127977",
+          "22237146",
+          "25787073",
+          "16968876",
+          "19931500"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 18,
+        "generation_time_ms": 343,
+        "response_time_ms": 361
+      },
+      {
+        "question_id": "14968373",
+        "question": "Can CT predict the level of CSF block in tuberculous hydrocephalus?",
+        "sources": [
+          "14968373",
+          "12848629",
+          "10548670",
+          "24450673",
+          "26778755"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 21,
+        "generation_time_ms": 381,
+        "response_time_ms": 402
+      },
+      {
+        "question_id": "22042121",
+        "question": "Perioperative care in an animal model for training in abdominal surgery: is it necessary a preoperative fasting?",
+        "sources": [
+          "22042121",
+          "16678696",
+          "22694248",
+          "26304701",
+          "12442934"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 320,
+        "response_time_ms": 334
+      },
+      {
+        "question_id": "26859535",
+        "question": "Screening History Among Women with Invasive Cervical Cancer in an Academic Medical Center: Will We Miss Cancers Following Updated Guidelines?",
+        "sources": [
+          "26859535",
+          "18714572",
+          "22564465",
+          "26215326",
+          "25311479"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 511,
+        "response_time_ms": 527
+      },
+      {
+        "question_id": "19103915",
+        "question": "Are home sampling kits for sexually transmitted infections acceptable among men who have sex with men?",
+        "sources": [
+          "19103915",
+          "9792366",
+          "16816043",
+          "19643525",
+          "25487603"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 50,
+        "generation_time_ms": 478,
+        "response_time_ms": 528
+      },
+      {
+        "question_id": "22694248",
+        "question": "Is there a model to teach and practice retroperitoneoscopic nephrectomy?",
+        "sources": [
+          "22694248",
+          "17445978",
+          "20674150",
+          "23517744",
+          "24606627"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 56,
+        "generation_time_ms": 572,
+        "response_time_ms": 628
+      },
+      {
+        "question_id": "17008699",
+        "question": "Do patients with localized prostate cancer treatment really want more aggressive treatment?",
+        "sources": [
+          "17008699",
+          "12947068",
+          "23806388",
+          "15708048",
+          "14697414"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 68,
+        "generation_time_ms": 538,
+        "response_time_ms": 606
+      },
+      {
+        "question_id": "12006913",
+        "question": "Do lipids, blood pressure, diabetes, and smoking confer equal risk of myocardial infarction in women as in men?",
+        "sources": [
+          "12006913",
+          "23149821",
+          "24019262",
+          "16319544",
+          "10201555"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 65,
+        "generation_time_ms": 506,
+        "response_time_ms": 571
+      },
+      {
+        "question_id": "12913347",
+        "question": "Do microbiological factors account for poor pregnancy outcome among unmarried pregnant women in Poland?",
+        "sources": [
+          "12913347",
+          "17220021",
+          "16809243",
+          "23621776",
+          "28247485"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 58,
+        "generation_time_ms": 473,
+        "response_time_ms": 531
+      },
+      {
+        "question_id": "18472368",
+        "question": "Does treatment duration affect outcome after radiotherapy for prostate cancer?",
+        "sources": [
+          "18472368",
+          "12947068",
+          "14697414",
+          "17008699",
+          "25489696"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 54,
+        "generation_time_ms": 539,
+        "response_time_ms": 593
+      },
+      {
+        "question_id": "15787677",
+        "question": "Does aerobic fitness influence microvascular function in healthy adults at risk of developing Type 2 diabetes?",
+        "sources": [
+          "15787677",
+          "23224030",
+          "15939071",
+          "17076091",
+          "22720085"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 66,
+        "generation_time_ms": 451,
+        "response_time_ms": 517
+      },
+      {
+        "question_id": "26485091",
+        "question": "Does the use of atypical antipsychotics as adjunctive therapy in depression result in cost savings?",
+        "sources": [
+          "26485091",
+          "26370095",
+          "17076590",
+          "18832500",
+          "21712147"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 19,
+        "generation_time_ms": 532,
+        "response_time_ms": 551
+      },
+      {
+        "question_id": "22302658",
+        "question": "Does limb-salvage surgery offer patients better quality of life and functional capacity than amputation?",
+        "sources": [
+          "22302658",
+          "11149643",
+          "27908583",
+          "24901580",
+          "10411439"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 65,
+        "generation_time_ms": 399,
+        "response_time_ms": 464
+      },
+      {
+        "question_id": "19643525",
+        "question": "Can vaginal pH be measured from the wet mount slide?",
+        "sources": [
+          "19643525",
+          "14992556",
+          "11776681",
+          "18714572",
+          "26778755"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 39,
+        "generation_time_ms": 527,
+        "response_time_ms": 566
+      },
+      {
+        "question_id": "20064872",
+        "question": "Can the prognosis of polymyalgia rheumatica be predicted at disease onset?",
+        "sources": [
+          "25417760",
+          "14655021",
+          "11247896",
+          "23806388",
+          "17601244"
+        ],
+        "gold_doc_in_top_k": false,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 65,
+        "generation_time_ms": 364,
+        "response_time_ms": 429
+      },
+      {
+        "question_id": "19923859",
+        "question": "Can T-cell deficiency affect spatial learning ability following toluene exposure?",
+        "sources": [
+          "19923859",
+          "23360491",
+          "9381529",
+          "20684175",
+          "16195477"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 310,
+        "response_time_ms": 323
+      },
+      {
+        "question_id": "27338535",
+        "question": "Do risk calculators accurately predict surgical site\u00a0occurrences?",
+        "sources": [
+          "27338535",
+          "23806388",
+          "22491528",
+          "21346501",
+          "21166749"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 392,
+        "response_time_ms": 403
+      },
+      {
+        "question_id": "28027677",
+        "question": "Do prerecorded lecture VODcasts affect lecture attendance of first-yearpre-clinical Graduate Entry to Medicine students?",
+        "sources": [
+          "28027677",
+          "24973051",
+          "21889895",
+          "22251324",
+          "20549895"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 338,
+        "response_time_ms": 353
+      },
+      {
+        "question_id": "24318956",
+        "question": "Is digoxin use for cardiovascular disease associated with risk of prostate cancer?",
+        "sources": [
+          "24318956",
+          "18472368",
+          "23806388",
+          "19836806",
+          "15708048"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 364,
+        "response_time_ms": 377
+      },
+      {
+        "question_id": "21569408",
+        "question": "Does context matter for the relationship between deprivation and all-cause mortality?",
+        "sources": [
+          "21569408",
+          "16956164",
+          "22205377",
+          "22012962",
+          "21658267"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 328,
+        "response_time_ms": 341
+      },
+      {
+        "question_id": "11729377",
+        "question": "Is there still a need for living-related liver transplantation in children?",
+        "sources": [
+          "11729377",
+          "21850494",
+          "9603166",
+          "9107172",
+          "11926574"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 369,
+        "response_time_ms": 382
+      },
+      {
+        "question_id": "20871246",
+        "question": "Young-Burgess classification of pelvic ring fractures: does it predict mortality, transfusion requirements, and non-orthopaedic injuries?",
+        "sources": [
+          "20871246",
+          "24630333",
+          "18496363",
+          "25277731",
+          "24183388"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 344,
+        "response_time_ms": 358
+      },
+      {
+        "question_id": "16418930",
+        "question": "Landolt C and snellen e acuity: differences in strabismus amblyopia?",
+        "sources": [
+          "16418930",
+          "10966943",
+          "27757987",
+          "24481006",
+          "16769333"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 338,
+        "response_time_ms": 351
+      },
+      {
+        "question_id": "20084845",
+        "question": "Biomolecular identification of allergenic pollen: a new perspective for aerobiological monitoring?",
+        "sources": [
+          "20084845",
+          "24516646",
+          "19664156",
+          "16266387",
+          "19822586"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 22,
+        "generation_time_ms": 390,
+        "response_time_ms": 412
+      },
+      {
+        "question_id": "21850494",
+        "question": "Hepatorenal syndrome: are we missing some prognostic factors?",
+        "sources": [
+          "21850494",
+          "22644412",
+          "15530261",
+          "18575014",
+          "28407529"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 20,
+        "generation_time_ms": 399,
+        "response_time_ms": 419
+      },
+      {
+        "question_id": "10331115",
+        "question": "Is amoxapine an atypical antipsychotic?",
+        "sources": [
+          "10331115",
+          "26485091",
+          "11035130",
+          "24785562",
+          "24315783"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 303,
+        "response_time_ms": 318
+      },
+      {
+        "question_id": "10605400",
+        "question": "Is the international normalised ratio (INR) reliable?",
+        "sources": [
+          "10605400",
+          "15151701",
+          "15141797",
+          "22411435",
+          "20306735"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 418,
+        "response_time_ms": 434
+      },
+      {
+        "question_id": "10757151",
+        "question": "Does ischemic preconditioning require reperfusion before index ischemia?",
+        "sources": [
+          "10757151",
+          "21900017",
+          "26175531",
+          "21952349",
+          "23517744"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 468,
+        "response_time_ms": 484
+      },
+      {
+        "question_id": "21593045",
+        "question": "Do women with ovaries of polycystic morphology without any other features of PCOS benefit from short-term metformin co-treatment during IVF?",
+        "sources": [
+          "21593045",
+          "16414216",
+          "26126304",
+          "18319270",
+          "26215326"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 22,
+        "generation_time_ms": 389,
+        "response_time_ms": 411
+      },
+      {
+        "question_id": "24298614",
+        "question": "Is the 7th TNM edition suitable for biological predictor in early gastric cancer?",
+        "sources": [
+          "24298614",
+          "25614468",
+          "25604390",
+          "20674150",
+          "20602101"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 22,
+        "generation_time_ms": 389,
+        "response_time_ms": 411
+      },
+      {
+        "question_id": "21914194",
+        "question": "Health care for immigrants in Europe: is there still consensus among country experts about principles of good practice?",
+        "sources": [
+          "21914194",
+          "22233470",
+          "24751724",
+          "18307476",
+          "22117569"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 393,
+        "response_time_ms": 407
+      },
+      {
+        "question_id": "14518645",
+        "question": "Injury and poisoning mortality among young men--are there any common factors amenable to prevention?",
+        "sources": [
+          "14518645",
+          "18496363",
+          "15995461",
+          "22813804",
+          "25487603"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 287,
+        "response_time_ms": 301
+      },
+      {
+        "question_id": "22075911",
+        "question": "Is there a differential in the dental health of new recruits to the British Armed Forces?",
+        "sources": [
+          "22075911",
+          "22251324",
+          "9140335",
+          "26163474",
+          "12070552"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 333,
+        "response_time_ms": 348
+      },
+      {
+        "question_id": "25070942",
+        "question": "Can mass drug administration lead to the sustainable control of schistosomiasis?",
+        "sources": [
+          "25070942",
+          "20537205",
+          "18507507",
+          "25986020",
+          "15502995"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 314,
+        "response_time_ms": 327
+      },
+      {
+        "question_id": "10877371",
+        "question": "Does head positioning influence anterior chamber depth in pseudoexfoliation syndrome?",
+        "sources": [
+          "10877371",
+          "11438275",
+          "16249670",
+          "27394685",
+          "22497340"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 293,
+        "response_time_ms": 306
+      },
+      {
+        "question_id": "22023714",
+        "question": "Does delivery mode affect women's postpartum quality of life in rural China?",
+        "sources": [
+          "22023714",
+          "15918864",
+          "27928673",
+          "16147837",
+          "22521460"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 359,
+        "response_time_ms": 372
+      },
+      {
+        "question_id": "25521278",
+        "question": "Is plate clearing a risk factor for obesity?",
+        "sources": [
+          "25521278",
+          "16319544",
+          "22990761",
+          "19615731",
+          "24748473"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 304,
+        "response_time_ms": 315
+      },
+      {
+        "question_id": "10548670",
+        "question": "Does the National Institutes of Health Stroke Scale favor left hemisphere strokes?",
+        "sources": [
+          "10548670",
+          "19351635",
+          "10173769",
+          "25819796",
+          "25891436"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 417,
+        "response_time_ms": 430
+      },
+      {
+        "question_id": "25304452",
+        "question": "Nutritional assessment of gluten-free diet. Is gluten-free diet deficient in some nutrient?",
+        "sources": [
+          "25304452",
+          "18403944",
+          "16097998",
+          "22876568",
+          "23224030"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 17,
+        "generation_time_ms": 367,
+        "response_time_ms": 384
+      },
+      {
+        "question_id": "19145527",
+        "question": "Do emergency medical services professionals think they should participate in disease prevention?",
+        "sources": [
+          "19145527",
+          "24866606",
+          "20121683",
+          "23539689",
+          "24374414"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 369,
+        "response_time_ms": 382
+      },
+      {
+        "question_id": "27615402",
+        "question": "Does the familial transmission of drinking patterns persist into young adulthood?",
+        "sources": [
+          "27615402",
+          "23025584",
+          "23414523",
+          "25699562",
+          "17595200"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "maybe",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 303,
+        "response_time_ms": 316
+      },
+      {
+        "question_id": "12153648",
+        "question": "Does birth center care during a woman's first pregnancy have any impact on her future reproduction?",
+        "sources": [
+          "12153648",
+          "16428354",
+          "16809243",
+          "16647887",
+          "17403428"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 21,
+        "generation_time_ms": 364,
+        "response_time_ms": 385
+      },
+      {
+        "question_id": "17919952",
+        "question": "Are reports of mechanical dysfunction in chronic oro-facial pain related to somatisation?",
+        "sources": [
+          "17919952",
+          "21951591",
+          "11567820",
+          "25499207",
+          "14872327"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 18,
+        "generation_time_ms": 372,
+        "response_time_ms": 390
+      },
+      {
+        "question_id": "26383908",
+        "question": "Does concept mapping enhance learning outcome of nursing students?",
+        "sources": [
+          "26383908",
+          "21228436",
+          "26134053",
+          "21745056",
+          "24973051"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 11,
+        "generation_time_ms": 270,
+        "response_time_ms": 281
+      },
+      {
+        "question_id": "25488308",
+        "question": "Can bone thickness and inter-radicular space affect miniscrew placement in posterior mandibular sites?",
+        "sources": [
+          "25488308",
+          "24245816",
+          "18784527",
+          "22540518",
+          "23794696"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 342,
+        "response_time_ms": 356
+      },
+      {
+        "question_id": "23949294",
+        "question": "Treatment as prevention in resource-limited settings: is it feasible to maintain HIV viral load suppression over time?",
+        "sources": [
+          "23949294",
+          "15280782",
+          "25793749",
+          "21712147",
+          "9603166"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 16,
+        "generation_time_ms": 439,
+        "response_time_ms": 455
+      },
+      {
+        "question_id": "26104852",
+        "question": "Can echocardiography and ECG discriminate hereditary transthyretin V30M amyloidosis from hypertrophic cardiomyopathy?",
+        "sources": [
+          "26104852",
+          "27131771",
+          "22428608",
+          "24449622",
+          "8910148"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 331,
+        "response_time_ms": 346
+      },
+      {
+        "question_id": "24153338",
+        "question": "Is aneurysm repair justified for the patients aged 80 or older after aneurysmal subarachnoid hemorrhage?",
+        "sources": [
+          "24153338",
+          "12765819",
+          "14652839",
+          "19351635",
+          "25987398"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 357,
+        "response_time_ms": 371
+      },
+      {
+        "question_id": "23848044",
+        "question": "Does oxybutynin hydrochloride cause arrhythmia in children with bladder dysfunction?",
+        "sources": [
+          "23848044",
+          "18179827",
+          "25501465",
+          "20497880",
+          "24809662"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 318,
+        "response_time_ms": 330
+      },
+      {
+        "question_id": "22668852",
+        "question": "Do African American women require fewer calories to maintain weight?",
+        "sources": [
+          "22668852",
+          "21123461",
+          "19615731",
+          "25521278",
+          "25150098"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "No",
+        "prediction": "no",
+        "gold_answer": "no",
+        "retrieval_time_ms": 12,
+        "generation_time_ms": 388,
+        "response_time_ms": 400
+      },
+      {
+        "question_id": "19401574",
+        "question": "Gadofosveset-enhanced MR angiography of carotid arteries: does steady-state imaging improve accuracy of first-pass imaging?",
+        "sources": [
+          "19401574",
+          "14745753",
+          "24507422",
+          "23449952",
+          "24799031"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 14,
+        "generation_time_ms": 364,
+        "response_time_ms": 378
+      },
+      {
+        "question_id": "12595848",
+        "question": "Is specialty care associated with improved survival of patients with congestive heart failure?",
+        "sources": [
+          "12595848",
+          "26237424",
+          "17610439",
+          "7860319",
+          "9107172"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "yes",
+        "retrieval_time_ms": 13,
+        "generation_time_ms": 424,
+        "response_time_ms": 437
+      },
+      {
+        "question_id": "25985014",
+        "question": "Is ganglionated plexi ablation during Maze IV procedure beneficial for postoperative long-term stable sinus rhythm?",
+        "sources": [
+          "25985014",
+          "21946341",
+          "9347843",
+          "21194998",
+          "26063028"
+        ],
+        "gold_doc_in_top_k": true,
+        "raw_answer": "Yes",
+        "prediction": "yes",
+        "gold_answer": "no",
+        "retrieval_time_ms": 15,
+        "generation_time_ms": 377,
+        "response_time_ms": 392
+      }
+    ]
+  }
+}
